@@ -1,0 +1,1 @@
+Scrapped data from Verified users on Tesla, BMW and Volkswagen from 29 Jan 2022 to 29 March 2022
