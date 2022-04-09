@@ -1,127 +1,4 @@
 <<<<<<< Updated upstream
-2022-04-06 22:45:24.303 INFO  (main) [   ] o.e.j.u.log Logging initialized @1178ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-04-06 22:45:24.517 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
-2022-04-06 22:45:24.527 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
-2022-04-06 22:45:24.797 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2022-04-06 22:45:24.805 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2022-04-06 22:45:24.805 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2022-04-06 22:45:24.807 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2022-04-06 22:45:24.866 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-04-06 22:45:24.871 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
-2022-04-06 22:45:24.872 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-04-06 22:45:24.872 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kirath/Information-Retrieval/solr-8.11.1
-2022-04-06 22:45:24.872 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2022-04-06T22:45:24.872279Z
-2022-04-06 22:45:24.885 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
-2022-04-06 22:45:24.885 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/solr.xml
-2022-04-06 22:45:24.974 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
-2022-04-06 22:45:25.461 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2022-04-06 22:45:25.662 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4efc25fc[provider=null,keyStore=null,trustStore=null]
-2022-04-06 22:45:25.662 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4efc25fc[provider=null,keyStore=null,trustStore=null]
-2022-04-06 22:45:25.776 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1daf3b44[provider=null,keyStore=null,trustStore=null]
-2022-04-06 22:45:25.776 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1daf3b44[provider=null,keyStore=null,trustStore=null]
-2022-04-06 22:45:25.812 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-04-06 22:45:25.920 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-04-06 22:45:25.930 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2022-04-06 22:45:25.992 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 22:45:25.993 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 22:45:25.993 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 22:45:26.062 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
-2022-04-06 22:45:26.063 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [CSVCore]
-2022-04-06 22:45:26.093 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
-2022-04-06 22:45:26.130 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61bcd567{/solr,file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
-2022-04-06 22:45:26.132 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2022-04-06 22:45:26.144 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2022-04-06 22:45:26.145 INFO  (main) [   ] o.e.j.s.Server Started @3023ms
-2022-04-06 22:45:26.179 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Schema name=default-config
-2022-04-06 22:45:26.400 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2022-04-06 22:45:26.400 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2022-04-06 22:45:26.400 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2022-04-06 22:45:26.400 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2022-04-06 22:45:26.401 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2022-04-06 22:45:26.500 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2022-04-06 22:45:26.520 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.CoreContainer Creating SolrCore 'CSVCore' using configuration from instancedir /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore, trusted=true
-2022-04-06 22:45:26.542 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.CSVCore' (registry 'solr.core.CSVCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 22:45:26.554 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrCore [[CSVCore] ] Opening new SolrCore at [/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore], dataDir=[/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/]
-2022-04-06 22:45:27.091 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2022-04-06 22:45:27.091 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2022-04-06 22:45:27.097 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2022-04-06 22:45:27.097 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2022-04-06 22:45:27.132 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf
-2022-04-06 22:45:27.143 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2022-04-06 22:45:27.147 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2022-04-06 22:45:27.155 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2022-04-06 22:45:27.159 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1729400801495875584
-2022-04-06 22:45:27.162 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-06 22:45:27.162 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2022-04-06 22:45:27.166 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-06 22:45:29.951 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649285129851} status=0 QTime=5
-2022-04-06 22:45:29.960 INFO  (qtp1818339587-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649285129851} status=0 QTime=13
-2022-04-06 22:45:30.000 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q="BMW"&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=52
-2022-04-06 22:45:35.564 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=0
-2022-04-06 22:45:35.611 INFO  (qtp1818339587-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649285129851} status=0 QTime=0
-2022-04-06 22:45:35.613 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649285129851} status=0 QTime=2
-2022-04-06 22:45:57.414 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=1
-2022-04-06 22:45:57.464 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649285129851} status=0 QTime=0
-2022-04-06 22:45:57.466 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=1
-2022-04-06 22:45:57.467 INFO  (qtp1818339587-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649285129851} status=0 QTime=2
-2022-04-06 22:46:00.694 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=0
-2022-04-06 22:46:06.606 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=0
-2022-04-06 22:46:12.980 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1508833778118139910 (1729400848432234496), 1508832715868672007 (1729400848476274688), 1508829233589547009 (1729400848478371840), 1508828850557497344 (1729400848479420416), 1508828842634489859 (1729400848481517568), 1508821981529001985 (1729400848482566144), 1508814508428607494 (1729400848483614720), 1508814432490692612 (1729400848484663296), 1508813729726668807 (1729400848485711872), 1508798630089531394 (1729400848487809024), ... (5452 adds)]} 0 1074
-2022-04-06 22:46:13.619 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-06 22:46:13.624 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 4 ms
-2022-04-06 22:46:13.630 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 646
-2022-04-06 22:46:16.568 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649285129908} hits=5452 status=0 QTime=5
-2022-04-06 22:46:22.604 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=BMW&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=2
-2022-04-06 22:46:22.651 INFO  (qtp1818339587-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649285129851} status=0 QTime=0
-2022-04-06 22:46:22.652 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=BMW&indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=0
-2022-04-06 22:46:22.654 INFO  (qtp1818339587-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649285129851} status=0 QTime=2
-2022-04-06 22:46:30.568 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={indent=true&q.op=OR&_=1649285129908} hits=0 status=0 QTime=0
-2022-04-06 22:46:30.617 INFO  (qtp1818339587-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649285129851} status=0 QTime=0
-2022-04-06 22:46:30.619 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649285129851} status=0 QTime=2
-2022-04-06 22:47:30.372 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2022-04-06 22:47:30.372 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2022-04-06 22:47:30.373 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1717136008
-2022-04-06 22:47:30.375 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [CSVCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@7dcd9782
-2022-04-06 22:47:30.375 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.CSVCore tag=SolrCore@7dcd9782
-2022-04-06 22:47:30.375 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5c0e3590: rootName = null, domain = solr.core.CSVCore, service url = null, agent id = null] for registry solr.core.CSVCore/com.codahale.metrics.MetricRegistry@7809eb15
-2022-04-06 22:47:30.386 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2022-04-06 22:47:30.387 ERROR (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.SolrIndexWriter Error closing IndexWriter => java.nio.file.NoSuchFileException: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/index
-	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
-java.nio.file.NoSuchFileException: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/index
-	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-	at sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:419) ~[?:?]
-	at java.nio.file.Files.newDirectoryStream(Files.java:476) ~[?:?]
-	at org.apache.lucene.store.FSDirectory.listAll(FSDirectory.java:214) ~[?:?]
-	at org.apache.lucene.store.FSDirectory.listAll(FSDirectory.java:233) ~[?:?]
-	at org.apache.lucene.store.NRTCachingDirectory.listAll(NRTCachingDirectory.java:102) ~[?:?]
-	at org.apache.lucene.store.FilterDirectory.listAll(FilterDirectory.java:58) ~[?:?]
-	at org.apache.lucene.index.IndexFileDeleter.refresh(IndexFileDeleter.java:427) ~[?:?]
-	at org.apache.lucene.index.IndexWriter.rollbackInternalNoCommit(IndexWriter.java:2473) ~[?:?]
-	at org.apache.lucene.index.IndexWriter.rollbackInternal(IndexWriter.java:2409) ~[?:?]
-	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1247) ~[?:?]
-	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1278) ~[?:?]
-	at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:298) ~[?:?]
-	at org.apache.solr.update.DirectUpdateHandler2.closeWriter(DirectUpdateHandler2.java:910) ~[?:?]
-	at org.apache.solr.update.DefaultSolrCoreState.closeIndexWriter(DefaultSolrCoreState.java:106) ~[?:?]
-	at org.apache.solr.update.DefaultSolrCoreState.close(DefaultSolrCoreState.java:403) ~[?:?]
-	at org.apache.solr.update.SolrCoreState.decrefSolrCoreState(SolrCoreState.java:114) ~[?:?]
-	at org.apache.solr.core.SolrCore.close(SolrCore.java:1626) ~[?:?]
-	at org.apache.solr.core.SolrCores.lambda$close$0(SolrCores.java:123) ~[?:?]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
-	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
-	at java.lang.Thread.run(Thread.java:831) [?:?]
-2022-04-06 22:47:30.392 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2022-04-06 22:47:30.392 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4d18b73a: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@73956ea2
-2022-04-06 22:47:30.394 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2022-04-06 22:47:30.394 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@25673087: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@6a0e8a8
-2022-04-06 22:47:30.395 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2022-04-06 22:47:30.395 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b27e8f4: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7002e2cb
-2022-04-06 22:47:30.401 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61bcd567{/solr,null,STOPPED}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
-=======
 2022-04-06 22:47:36.999 INFO  (main) [   ] o.e.j.u.log Logging initialized @945ms to org.eclipse.jetty.util.log.Slf4jLog
 2022-04-06 22:47:37.163 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
 2022-04-06 22:47:37.173 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
@@ -197,4 +74,417 @@ java.nio.file.NoSuchFileException: /Users/kirath/Information-Retrieval/solr-8.11
 2022-04-06 23:02:31.876 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
 2022-04-06 23:02:31.876 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b27e8f4: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7002e2cb
 2022-04-06 23:02:31.882 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61bcd567{/solr,null,STOPPED}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
+=======
+2022-04-06 23:02:38.431 INFO  (main) [   ] o.e.j.u.log Logging initialized @934ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-04-06 23:02:38.590 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
+2022-04-06 23:02:38.602 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
+2022-04-06 23:02:38.828 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2022-04-06 23:02:38.835 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2022-04-06 23:02:38.835 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2022-04-06 23:02:38.837 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2022-04-06 23:02:38.883 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-04-06 23:02:38.887 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
+2022-04-06 23:02:38.887 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-04-06 23:02:38.887 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kirath/Information-Retrieval/solr-8.11.1
+2022-04-06 23:02:38.887 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2022-04-06T23:02:38.887528Z
+2022-04-06 23:02:38.899 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
+2022-04-06 23:02:38.899 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/solr.xml
+2022-04-06 23:02:38.955 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
+2022-04-06 23:02:39.289 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2022-04-06 23:02:39.428 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4efc25fc[provider=null,keyStore=null,trustStore=null]
+2022-04-06 23:02:39.429 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4efc25fc[provider=null,keyStore=null,trustStore=null]
+2022-04-06 23:02:39.523 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1daf3b44[provider=null,keyStore=null,trustStore=null]
+2022-04-06 23:02:39.523 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1daf3b44[provider=null,keyStore=null,trustStore=null]
+2022-04-06 23:02:39.563 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-04-06 23:02:39.657 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-04-06 23:02:39.662 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2022-04-06 23:02:39.699 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-06 23:02:39.700 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-06 23:02:39.700 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-06 23:02:39.719 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
+2022-04-06 23:02:39.720 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [CSVCore]
+2022-04-06 23:02:39.740 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2022-04-06 23:02:39.757 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2022-04-06 23:02:39.761 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61bcd567{/solr,file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
+2022-04-06 23:02:39.768 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2022-04-06 23:02:39.769 INFO  (main) [   ] o.e.j.s.Server Started @2273ms
+2022-04-06 23:02:39.785 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Schema name=default-config
+2022-04-06 23:02:39.965 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2022-04-06 23:02:39.965 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2022-04-06 23:02:39.965 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2022-04-06 23:02:39.965 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2022-04-06 23:02:39.965 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2022-04-06 23:02:40.049 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-04-06 23:02:40.070 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.CoreContainer Creating SolrCore 'CSVCore' using configuration from instancedir /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore, trusted=true
+2022-04-06 23:02:40.084 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.CSVCore' (registry 'solr.core.CSVCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-06 23:02:40.092 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrCore [[CSVCore] ] Opening new SolrCore at [/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore], dataDir=[/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/]
+2022-04-06 23:02:40.521 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-04-06 23:02:40.521 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-04-06 23:02:40.527 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-04-06 23:02:40.527 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-04-06 23:02:40.563 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf
+2022-04-06 23:02:40.572 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2022-04-06 23:02:40.576 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2022-04-06 23:02:40.584 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-04-06 23:02:40.587 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1729401885123674112
+2022-04-06 23:02:40.590 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:02:40.590 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-04-06 23:02:40.594 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:02:43.626 INFO  (qtp1818339587-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649286163544} status=0 QTime=4
+2022-04-06 23:02:43.630 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649286163544} status=0 QTime=7
+2022-04-06 23:02:43.650 INFO  (qtp1818339587-22) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649286163585} hits=0 status=0 QTime=25
+2022-04-06 23:02:44.996 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649286163585} hits=0 status=0 QTime=2
+2022-04-06 23:02:46.821 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649286163585} hits=0 status=0 QTime=0
+2022-04-06 23:02:47.775 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649286163585} hits=0 status=0 QTime=0
+2022-04-06 23:04:53.982 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1509507895674961921 (1729402024322138112), 1509507394866659330 (1729402024364081152), 1509502093979234312 (1729402024366178304), 1509498759293505538 (1729402024368275456), 1509498757804527616 (1729402024369324032), 1509498739156684803 (1729402024371421184), 1509496803569246208 (1729402024372469760), 1509492135502184449 (1729402024373518336), 1509486458452598791 (1729402024374566912), 1509484582500028420 (1729402024375615488), ... (2459 adds)]} 0 658
+2022-04-06 23:04:54.452 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:04:54.457 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 3 ms
+2022-04-06 23:04:54.462 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 475
+2022-04-06 23:04:55.834 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1508833778118139910 (1729402025776513024), 1508832715868672007 (1729402025779658752), 1508829233589547009 (1729402025779658753), 1508828850557497344 (1729402025780707328), 1508828842634489859 (1729402025780707329), 1508821981529001985 (1729402025781755904), 1508814508428607494 (1729402025781755905), 1508814432490692612 (1729402025781755906), 1508813729726668807 (1729402025782804480), 1508798630089531394 (1729402025782804481), ... (5452 adds)]} 0 1111
+2022-04-06 23:04:56.328 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:04:56.333 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:04:56.334 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 496
+2022-04-06 23:04:57.004 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1508831853867765760 (1729402027710087168), 1508831629967515655 (1729402027712184320), 1508830095401787392 (1729402027712184321), 1508828860170878991 (1729402027713232896), 1508827795153170437 (1729402027713232897), 1508827007437660165 (1729402027713232898), 1508826514263052290 (1729402027713232899), 1508826336135192578 (1729402027713232900), 1508826271668572161 (1729402027713232901), 1508826189175087105 (1729402027714281472), ... (3963 adds)]} 0 436
+2022-04-06 23:04:57.292 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:04:57.295 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:04:57.297 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 290
+2022-04-06 23:04:57.600 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf/managed-schema
+2022-04-06 23:04:59.284 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1504606560999333888 (1729402028793266176), 1504606011935633409 (1729402028795363328), 1504604139426361344 (1729402028796411904), 1504603316411670536 (1729402028796411905), 1504597196083138560 (1729402028796411906), 1504597041598533632 (1729402028796411907), 1504586587476217856 (1729402028797460480), 1504585979017011200 (1729402028797460481), 1504584729588289536 (1729402028797460482), 1504580584684679168 (1729402028797460483), ... (16221 adds)]} 0 1717
+2022-04-06 23:04:59.925 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:04:59.927 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:04:59.928 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 640
+2022-04-06 23:05:02.072 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507394863444099072 (1729402031481815040), 1507394807575973888 (1729402031483912192), 1507394749954732036 (1729402031483912193), 1507394690420998148 (1729402031483912194), 1507394651594108929 (1729402031483912195), 1507394511038681098 (1729402031483912196), 1507394443388858377 (1729402031483912197), 1507394390989455365 (1729402031483912198), 1507394380335882270 (1729402031484960768), 1507394328871776258 (1729402031484960769), ... (20772 adds)]} 0 1908
+2022-04-06 23:05:02.651 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:02.652 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:02.653 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 578
+2022-04-06 23:05:03.975 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507394863444099072 (1729402034337087488), 1507394807575973888 (1729402034339184640), 1507394511038681098 (1729402034339184641), 1507394443388858377 (1729402034339184642), 1507394380335882270 (1729402034340233216), 1507392946831826995 (1729402034340233217), 1507392510506721287 (1729402034340233218), 1507392492433457159 (1729402034340233219), 1507392137683423233 (1729402034340233220), 1507392077436362755 (1729402034340233221), ... (12525 adds)]} 0 1087
+2022-04-06 23:05:04.398 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:04.399 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:04.400 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 422
+2022-04-06 23:05:07.059 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507267721779888136 (1729402036156366848), 1507267660681297934 (1729402036157415424), 1507267639948718085 (1729402036157415425), 1507267612002201606 (1729402036158464000), 1507267585968156674 (1729402036158464001), 1507267489578725377 (1729402036158464002), 1507267459950133248 (1729402036158464003), 1507267442086535175 (1729402036158464004), 1507267400064024579 (1729402036158464005), 1507267381369970691 (1729402036158464006), ... (29321 adds)]} 0 2437
+2022-04-06 23:05:07.658 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:07.660 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:07.661 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 598
+2022-04-06 23:05:09.639 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507267639948718085 (1729402039589404672), 1507267612002201606 (1729402039590453248), 1507267489578725377 (1729402039590453249), 1507267459950133248 (1729402039591501824), 1507267442086535175 (1729402039591501825), 1507267370695507974 (1729402039591501826), 1507267330363244548 (1729402039591501827), 1507267322259595265 (1729402039591501828), 1507267266056003585 (1729402039591501829), 1507267232186998786 (1729402039591501830), ... (20071 adds)]} 0 1743
+2022-04-06 23:05:10.092 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:10.094 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:10.095 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 452
+2022-04-06 23:05:10.352 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf/managed-schema
+2022-04-06 23:05:10.354 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{} 0 23
+2022-04-06 23:05:10.355 ERROR (qtp1818339587-21) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1.51E+18] Error adding field 'date'='29/3/2022 23:42' msg=Invalid Date String:'29/3/2022 23:42' => org.apache.solr.common.SolrException: ERROR: [doc=1.51E+18] Error adding field 'date'='29/3/2022 23:42' msg=Invalid Date String:'29/3/2022 23:42'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:219)
+org.apache.solr.common.SolrException: ERROR: [doc=1.51E+18] Error adding field 'date'='29/3/2022 23:42' msg=Invalid Date String:'29/3/2022 23:42'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:219) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:100) ~[?:?]
+	at org.apache.solr.update.AddUpdateCommand.lambda$null$0(AddUpdateCommand.java:261) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.lambda$initPartialTraversalState$0(StreamSpliterators.java:294) ~[?:?]
+	at java.util.stream.StreamSpliterators$AbstractWrappingSpliterator.fillBuffer(StreamSpliterators.java:206) ~[?:?]
+	at java.util.stream.StreamSpliterators$AbstractWrappingSpliterator.doAdvance(StreamSpliterators.java:161) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300) ~[?:?]
+	at java.util.Spliterators$1Adapter.hasNext(Spliterators.java:681) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocuments(DocumentsWriterPerThread.java:200) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriter.updateDocuments(DocumentsWriter.java:415) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1471) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1464) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:967) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:342) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:294) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:241) ~[?:?]
+	at org.apache.solr.update.processor.RunUpdateProcessorFactory$RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:73) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.NestedUpdateProcessorFactory$NestedUpdateProcessor.processAdd(NestedUpdateProcessorFactory.java:79) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:263) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:502) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:343) ~[?:?]
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:50) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:343) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:229) ~[?:?]
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:106) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:481) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.doAdd(CSVLoaderBase.java:391) ~[?:?]
+	at org.apache.solr.handler.loader.SingleThreadedCSVLoader.addDoc(CSVLoader.java:43) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:361) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:30) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:'29/3/2022 23:42'
+	at org.apache.solr.util.DateMathParser.parseMath(DateMathParser.java:247) ~[?:?]
+	at org.apache.solr.util.DateMathParser.parseMath(DateMathParser.java:226) ~[?:?]
+	at org.apache.solr.schema.DatePointField.createField(DatePointField.java:214) ~[?:?]
+	at org.apache.solr.schema.PointField.createFields(PointField.java:251) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:65) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:179) ~[?:?]
+	... 95 more
+2022-04-06 23:05:10.758 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:10.759 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:10.760 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 68
+2022-04-06 23:05:12.656 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507382048696287236 (1729402042852573184), 1507381093275738122 (1729402042854670336), 1507380558950768642 (1729402042854670337), 1507379908951085056 (1729402042854670338), 1507378515808866318 (1729402042855718912), 1507378323994955778 (1729402042855718913), 1507378180079828997 (1729402042855718914), 1507377966921052161 (1729402042855718915), 1507377960340312071 (1729402042855718916), 1507377844703346703 (1729402042856767488), ... (17450 adds)]} 0 1647
+2022-04-06 23:05:13.123 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:13.124 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:13.126 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 466
+2022-04-06 23:05:16.840 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507382048696287236 (1729402045317775360), 1507381911815077889 (1729402045319872512), 1507381185886195714 (1729402045319872513), 1507381093275738122 (1729402045319872514), 1507380901734453249 (1729402045319872515), 1507380710163849221 (1729402045319872516), 1507380558950768642 (1729402045319872517), 1507380042762010625 (1729402045320921088), 1507379937283559440 (1729402045320921089), 1507379908951085056 (1729402045320921090), ... (40008 adds)]} 0 3480
+2022-04-06 23:05:17.775 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:17.777 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:17.781 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 938
+2022-04-06 23:05:19.435 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507367893020790786 (1729402050187362304), 1507367803480952832 (1729402050188410880), 1507367586928988162 (1729402050189459456), 1507367494692057122 (1729402050189459457), 1507367114688061444 (1729402050189459458), 1507367006038806535 (1729402050189459459), 1507366952003461121 (1729402050189459460), 1507366821246410754 (1729402050189459461), 1507366722789126167 (1729402050189459462), 1507366433126338563 (1729402050189459463), ... (16283 adds)]} 0 1431
+2022-04-06 23:05:19.852 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:19.854 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:19.855 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 416
+2022-04-06 23:05:23.446 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1507367930643820557 (1729402052363157504), 1507367911366991878 (1729402052365254656), 1507367893020790786 (1729402052365254657), 1507367888327487533 (1729402052365254658), 1507367803480952832 (1729402052365254659), 1507367746392113154 (1729402052365254660), 1507367739966599176 (1729402052365254661), 1507367718894321666 (1729402052365254662), 1507367603148582914 (1729402052365254663), 1507367586928988162 (1729402052365254664), ... (38858 adds)]} 0 3367
+2022-04-06 23:05:24.334 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:24.336 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:24.339 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 890
+2022-04-06 23:05:24.570 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{} 0 0
+2022-04-06 23:05:24.571 ERROR (qtp1818339587-43) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=1.51E+18] Error adding field 'date'='29/3/2022 23:49' msg=Invalid Date String:'29/3/2022 23:49' => org.apache.solr.common.SolrException: ERROR: [doc=1.51E+18] Error adding field 'date'='29/3/2022 23:49' msg=Invalid Date String:'29/3/2022 23:49'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:219)
+org.apache.solr.common.SolrException: ERROR: [doc=1.51E+18] Error adding field 'date'='29/3/2022 23:49' msg=Invalid Date String:'29/3/2022 23:49'
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:219) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:100) ~[?:?]
+	at org.apache.solr.update.AddUpdateCommand.lambda$null$0(AddUpdateCommand.java:261) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.lambda$initPartialTraversalState$0(StreamSpliterators.java:294) ~[?:?]
+	at java.util.stream.StreamSpliterators$AbstractWrappingSpliterator.fillBuffer(StreamSpliterators.java:206) ~[?:?]
+	at java.util.stream.StreamSpliterators$AbstractWrappingSpliterator.doAdvance(StreamSpliterators.java:161) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300) ~[?:?]
+	at java.util.Spliterators$1Adapter.hasNext(Spliterators.java:681) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocuments(DocumentsWriterPerThread.java:200) ~[?:?]
+	at org.apache.lucene.index.DocumentsWriter.updateDocuments(DocumentsWriter.java:415) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1471) ~[?:?]
+	at org.apache.lucene.index.IndexWriter.updateDocuments(IndexWriter.java:1464) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:967) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:342) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:294) ~[?:?]
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:241) ~[?:?]
+	at org.apache.solr.update.processor.RunUpdateProcessorFactory$RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:73) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.NestedUpdateProcessorFactory$NestedUpdateProcessor.processAdd(NestedUpdateProcessorFactory.java:79) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:263) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:502) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:343) ~[?:?]
+	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:50) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:343) ~[?:?]
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:229) ~[?:?]
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:106) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:481) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118) ~[?:?]
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55) ~[?:?]
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.doAdd(CSVLoaderBase.java:391) ~[?:?]
+	at org.apache.solr.handler.loader.SingleThreadedCSVLoader.addDoc(CSVLoader.java:43) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:361) ~[?:?]
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:30) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:'29/3/2022 23:49'
+	at org.apache.solr.util.DateMathParser.parseMath(DateMathParser.java:247) ~[?:?]
+	at org.apache.solr.util.DateMathParser.parseMath(DateMathParser.java:226) ~[?:?]
+	at org.apache.solr.schema.DatePointField.createField(DatePointField.java:214) ~[?:?]
+	at org.apache.solr.schema.PointField.createFields(PointField.java:251) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:65) ~[?:?]
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:179) ~[?:?]
+	... 95 more
+2022-04-06 23:05:24.761 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:24.762 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:24.763 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 69
+2022-04-06 23:05:25.033 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511022426448138253 (1729402057511665664), 1511015430722359299 (1729402057512714240), 1511008455708098570 (1729402057512714241), 1511008445171830787 (1729402057512714242), 1511007673818529795 (1729402057512714243), 1510984076165058570 (1729402057512714244), 1510981726721515521 (1729402057512714245), 1510980857728798726 (1729402057513762816), 1510973407327928326 (1729402057513762817), 1510937010730504192 (1729402057513762818), ... (379 adds)]} 0 45
+2022-04-06 23:05:25.203 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:25.205 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:25.207 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 170
+2022-04-06 23:05:25.512 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511014063056240645 (1729402058027565056), 1511008130791923718 (1729402058029662208), 1511007825161428992 (1729402058030710784), 1511007386286309376 (1729402058030710785), 1510999442731978753 (1729402058030710786), 1510997650908323844 (1729402058030710787), 1510990899005771783 (1729402058030710788), 1510989354860118016 (1729402058030710789), 1510988795172298757 (1729402058030710790), 1510980077353381888 (1729402058030710791), ... (245 adds)]} 0 31
+2022-04-06 23:05:25.681 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:25.682 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:25.683 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 168
+2022-04-06 23:05:26.040 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511025895938699275 (1729402058500472832), 1511024892854128647 (1729402058501521408), 1511021560588644357 (1729402058501521409), 1511017976530706438 (1729402058501521410), 1511017286504751104 (1729402058502569984), 1511015609277976576 (1729402058502569985), 1511010665875619858 (1729402058502569986), 1511010154623508488 (1729402058502569987), 1511009447853797378 (1729402058502569988), 1511007248658616324 (1729402058502569989), ... (1151 adds)]} 0 108
+2022-04-06 23:05:26.208 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:26.210 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:26.210 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 167
+2022-04-06 23:05:26.466 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511010218142052357 (1729402059043635200), 1510999382337810435 (1729402059045732352), 1510970944382124036 (1729402059045732353), 1510959806110121985 (1729402059045732354), 1510924562137067523 (1729402059045732355), 1510741959438184448 (1729402059045732356), 1510708723391639564 (1729402059045732357), 1510688835272728578 (1729402059045732358), 1510663572900171787 (1729402059046780928), 1510633231900569615 (1729402059046780929), ... (135 adds)]} 0 15
+2022-04-06 23:05:26.612 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:26.614 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:26.614 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 145
+2022-04-06 23:05:26.916 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511008455708098570 (1729402059472502784), 1511002971294912515 (1729402059473551360), 1510996479380492293 (1729402059474599936), 1510985800707629060 (1729402059474599937), 1510981083839537159 (1729402059474599938), 1510981079175503878 (1729402059474599939), 1510958371335254019 (1729402059474599940), 1510951873959940096 (1729402059474599941), 1510934218326507522 (1729402059475648512), 1510926175320764418 (1729402059475648513), ... (463 adds)]} 0 58
+2022-04-06 23:05:27.090 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:27.091 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:27.092 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 173
+2022-04-06 23:05:27.390 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511026328300044296 (1729402059998887936), 1511025285541642243 (1729402060000985088), 1511023778133860360 (1729402060000985089), 1511017378636877832 (1729402060000985090), 1511013823171502080 (1729402060000985091), 1511009458222108673 (1729402060000985092), 1510997117455712256 (1729402060002033664), 1510995613504135171 (1729402060002033665), 1510993593506353157 (1729402060002033666), 1510980511082106884 (1729402060002033667), ... (195 adds)]} 0 30
+2022-04-06 23:05:33.095 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:33.097 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:33.098 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 5702
+2022-04-06 23:05:33.353 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511028348956381189 (1729402066249449472), 1511020305464143877 (1729402066251546624), 1511006187759747079 (1729402066251546625), 1511004526798589956 (1729402066251546626), 1510992101684752390 (1729402066251546627), 1510985040469151749 (1729402066251546628), 1510974519380484102 (1729402066251546629), 1510974514225688579 (1729402066251546630), 1510927912337383426 (1729402066252595200), 1510925812429733894 (1729402066252595201), ... (323 adds)]} 0 31
+2022-04-06 23:05:33.977 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:33.978 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:33.980 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 623
+2022-04-06 23:05:34.407 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511023561141637128 (1729402067227770880), 1511012450669277193 (1729402067228819456), 1511009752632987650 (1729402067228819457), 1511003572615405581 (1729402067228819458), 1511002819838582792 (1729402067228819459), 1510996560204775433 (1729402067229868032), 1510993972335812616 (1729402067229868033), 1510993749467410432 (1729402067229868034), 1510990259441610756 (1729402067229868035), 1510989936836718597 (1729402067229868036), ... (1312 adds)]} 0 152
+2022-04-06 23:05:34.559 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:34.561 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:34.566 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 155
+2022-04-06 23:05:34.853 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511013907611230213 (1729402067817070592), 1511012247174369281 (1729402067819167744), 1511003572615405581 (1729402067819167745), 1510995786477232135 (1729402067819167746), 1510995609276321792 (1729402067819167747), 1510994268478877700 (1729402067819167748), 1510983023960813569 (1729402067819167749), 1510974381455216647 (1729402067819167750), 1510973444086763526 (1729402067819167751), 1510969701702111238 (1729402067820216320), ... (355 adds)]} 0 36
+2022-04-06 23:05:35.039 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:35.040 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:35.040 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 184
+2022-04-06 23:05:35.360 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1511024615736365060 (1729402068298366976), 1511022539073589250 (1729402068300464128), 1511008016539209729 (1729402068300464129), 1511004822618750979 (1729402068300464130), 1510997368489099265 (1729402068300464131), 1510995664641085444 (1729402068300464132), 1510995609473503242 (1729402068300464133), 1510995608798081027 (1729402068300464134), 1510982268923248647 (1729402068301512704), 1510978176490487810 (1729402068301512705), ... (705 adds)]} 0 83
+2022-04-06 23:05:35.530 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:35.531 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:35.532 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 168
+2022-04-06 23:05:35.778 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1510945028809629698 (1729402068807974912), 1510939103566733313 (1729402068809023488), 1510927663208321027 (1729402068809023489), 1510874751371300865 (1729402068809023490), 1510873336053526528 (1729402068809023491), 1510862698678038529 (1729402068809023492), 1510850112938917890 (1729402068809023493), 1510848726927122433 (1729402068810072064), 1510833287123587080 (1729402068810072065), 1510810759567187974 (1729402068810072066), ... (151 adds)]} 0 17
+2022-04-06 23:05:35.941 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:35.942 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:35.943 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 161
+2022-04-06 23:05:39.105 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1504924097091977227 (1729402069246279680), 1504916801829830657 (1729402069247328256), 1504913002738425862 (1729402069247328257), 1504871441510158341 (1729402069247328258), 1504830240945750039 (1729402069247328259), 1504825084980117522 (1729402069247328260), 1504816071471243270 (1729402069247328261), 1504808603923980320 (1729402069248376832), 1504805364650418177 (1729402069248376833), 1504799302283145221 (1729402069248376834), ... (37790 adds)]} 0 2925
+2022-04-06 23:05:39.743 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:39.744 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:39.745 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 637
+2022-04-06 23:05:40.215 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1505263818179588101 (1729402073240305664), 1505263171963080706 (1729402073241354240), 1505262525272711170 (1729402073241354241), 1505261239752171523 (1729402073242402816), 1505221139144089601 (1729402073242402817), 1505220991496200192 (1729402073242402818), 1505220439198605321 (1729402073242402819), 1504919803298996224 (1729402073242402820), 1504913524686049292 (1729402073242402821), 1504901161278750721 (1729402073242402822), ... (2589 adds)]} 0 226
+2022-04-06 23:05:40.467 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:40.468 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:40.468 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 250
+2022-04-06 23:05:41.239 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1505222322701099009 (1729402073982697472), 1505201717331349508 (1729402073983746048), 1505183157821267969 (1729402073983746049), 1505154877915291653 (1729402073983746050), 1505115192564326403 (1729402073983746051), 1504932938051428357 (1729402073983746052), 1504923732082634752 (1729402073984794624), 1504913271949770758 (1729402073984794625), 1504901944313323520 (1729402073984794626), 1504888405200621573 (1729402073984794627), ... (6578 adds)]} 0 542
+2022-04-06 23:05:41.469 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:41.470 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:41.471 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 229
+2022-04-06 23:05:42.732 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1505367270054195202 (1729402075034419200), 1505352170798993408 (1729402075036516352), 1505337071157751808 (1729402075036516353), 1505321971537481728 (1729402075036516354), 1505306872248684547 (1729402075036516355), 1505246474333929473 (1729402075036516356), 1505244243471876099 (1729402075036516357), 1505231375418359808 (1729402075036516358), 1505216275886215169 (1729402075036516359), 1505201176647802891 (1729402075036516360), ... (12211 adds)]} 0 1032
+2022-04-06 23:05:43.209 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:43.210 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:43.211 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 475
+2022-04-06 23:05:43.529 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1504500529065512969 (1729402076867330048), 1503613336461664258 (1729402076868378624), 1503315808860229636 (1729402076868378625), 1503266469043482627 (1729402076868378626), 1502220358539419648 (1729402076868378627), 1502051040283271170 (1729402076869427200), 1501971628946767879 (1729402076869427201), 1501929083126652932 (1729402076869427202), 1501286635211681794 (1729402076869427203), 1501226303206395905 (1729402076869427204), ... (742 adds)]} 0 81
+2022-04-06 23:05:43.702 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-06 23:05:43.703 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-06 23:05:43.703 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 171
+2022-04-07 09:07:41.604 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649286163585} hits=209442 status=0 QTime=44
+2022-04-09 08:54:07.236 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2022-04-09 08:54:07.237 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2022-04-09 08:54:07.255 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1717136008
+2022-04-09 08:54:07.275 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [CSVCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@7dcd9782
+2022-04-09 08:54:07.277 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.CSVCore tag=SolrCore@7dcd9782
+2022-04-09 08:54:07.278 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5c0e3590: rootName = null, domain = solr.core.CSVCore, service url = null, agent id = null] for registry solr.core.CSVCore/com.codahale.metrics.MetricRegistry@f248f5a
+2022-04-09 08:54:07.304 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2022-04-09 08:54:07.555 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-04-09 08:54:07.555 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4d18b73a: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@73956ea2
+2022-04-09 08:54:07.558 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-04-09 08:54:07.558 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@25673087: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@6a0e8a8
+2022-04-09 08:54:07.559 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-04-09 08:54:07.559 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b27e8f4: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7002e2cb
+2022-04-09 08:54:07.590 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61bcd567{/solr,null,STOPPED}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
 >>>>>>> Stashed changes

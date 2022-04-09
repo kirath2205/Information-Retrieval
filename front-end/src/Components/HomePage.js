@@ -169,7 +169,7 @@ export const HomePage = () => {
 					flexDirection: "column",
 					alignItems: "center",
 					flex: 2,
-					justifyContent: "center",
+					// justifyContent: "center",
 					alignContent: "center",
 					// border: "1px solid #ced4d8",
 				}}
