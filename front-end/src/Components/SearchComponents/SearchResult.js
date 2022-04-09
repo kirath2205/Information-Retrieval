@@ -12,8 +12,10 @@ const Header = styled.div`
 `;
 
 const ImageStyle = styled.img`
-	width: 50px;
-	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+	max-width: 50px;
+	max-height: 50px;
 	// overflow: hidden;
 	border-radius: 50%;
 	object-fit: cover;
@@ -62,10 +64,6 @@ const LikeBox = styled.div`
 
 const SearchResult = (props) => {
 
-  const tweetClicked = () => {
-    console.log("clicked");
-  }
-
   const tweet = props.tweet;
 
   const dt = new Date(tweet.date);
@@ -81,8 +79,8 @@ const SearchResult = (props) => {
 				borderRadius: "3px",
 				marginTop: "15px",
 				padding: "10px",
+				background: "rgba(0,0,0,0.07)",
 			}}
-			onClick={tweetClicked}
 		>
 			<Header>
 				{tweet.thumbnail ? (
@@ -99,7 +97,7 @@ const SearchResult = (props) => {
 					<Tweet>{tweet.tweet[0]}</Tweet>
 
 					<Info>
-						<LikeBox>
+						<LikeBox style={{ flex: "2" }}>
 							<DateRangeIcon
 								style={{
 									fontSize: "20",
@@ -120,7 +118,7 @@ const SearchResult = (props) => {
 								alignContent: "flex-end",
 							}}
 						>
-							<LikeBox>
+							<LikeBox style={{ flex: "1" }}>
 								<FavoriteIcon
 									style={{
 										fontSize: "20",
@@ -129,7 +127,7 @@ const SearchResult = (props) => {
 								/>
 								{tweet.nlikes}
 							</LikeBox>
-							<LikeBox>
+							<LikeBox style={{ flex: "1" }}>
 								<LoopIcon
 									style={{
 										fontSize: "20",
@@ -138,7 +136,7 @@ const SearchResult = (props) => {
 								/>
 								{tweet.nretweets}
 							</LikeBox>
-							<LikeBox>
+							<LikeBox style={{ flex: "1" }}>
 								<ReplyIcon
 									style={{
 										fontSize: "20",

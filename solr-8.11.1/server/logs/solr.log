@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2022-04-09 17:51:50.721 INFO  (main) [   ] o.e.j.u.log Logging initialized @947ms to org.eclipse.jetty.util.log.Slf4jLog
 2022-04-09 17:51:50.888 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
 2022-04-09 17:51:50.896 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
@@ -290,3 +291,926 @@
 2022-04-09 17:53:39.678 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
 2022-04-09 17:53:39.679 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
 2022-04-09 17:53:39.679 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 176
+=======
+2022-04-09 09:45:02.071 INFO  (main) [   ] o.e.j.u.log Logging initialized @6389ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-04-09 09:45:02.335 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
+2022-04-09 09:45:02.345 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
+2022-04-09 09:45:02.669 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2022-04-09 09:45:02.681 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2022-04-09 09:45:02.681 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2022-04-09 09:45:02.684 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2022-04-09 09:45:02.739 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-04-09 09:45:02.742 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
+2022-04-09 09:45:02.742 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-04-09 09:45:02.743 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1
+2022-04-09 09:45:02.743 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2022-04-09T09:45:02.743184Z
+2022-04-09 09:45:02.772 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr
+2022-04-09 09:45:02.773 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/solr.xml
+2022-04-09 09:45:02.882 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
+2022-04-09 09:45:03.476 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2022-04-09 09:45:03.658 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e48bf9a[provider=null,keyStore=null,trustStore=null]
+2022-04-09 09:45:03.659 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e48bf9a[provider=null,keyStore=null,trustStore=null]
+2022-04-09 09:45:03.840 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@18acfe88[provider=null,keyStore=null,trustStore=null]
+2022-04-09 09:45:03.842 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@18acfe88[provider=null,keyStore=null,trustStore=null]
+2022-04-09 09:45:03.892 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-04-09 09:45:04.296 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-04-09 09:45:04.308 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2022-04-09 09:45:04.455 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-09 09:45:04.457 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-09 09:45:04.466 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-09 09:45:04.505 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr
+2022-04-09 09:45:04.505 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [CSVCore]
+2022-04-09 09:45:04.604 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2022-04-09 09:45:04.636 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61bcd567{/solr,file:///Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
+2022-04-09 09:45:04.636 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2022-04-09 09:45:04.692 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2022-04-09 09:45:04.695 INFO  (main) [   ] o.e.j.s.Server Started @9013ms
+2022-04-09 09:45:04.742 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Schema name=default-config
+2022-04-09 09:45:05.374 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2022-04-09 09:45:05.375 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2022-04-09 09:45:05.375 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2022-04-09 09:45:05.375 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2022-04-09 09:45:05.375 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2022-04-09 09:45:05.546 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-04-09 09:45:05.618 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.CoreContainer Creating SolrCore 'CSVCore' using configuration from instancedir /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore, trusted=true
+2022-04-09 09:45:05.647 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.CSVCore' (registry 'solr.core.CSVCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-09 09:45:05.667 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrCore [[CSVCore] ] Opening new SolrCore at [/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore], dataDir=[/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/]
+2022-04-09 09:45:06.391 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-04-09 09:45:06.391 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-04-09 09:45:06.408 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-04-09 09:45:06.408 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-04-09 09:45:06.612 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf
+2022-04-09 09:45:06.623 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2022-04-09 09:45:06.631 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2022-04-09 09:45:06.661 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-04-09 09:45:06.700 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-09 09:45:06.700 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-04-09 09:45:06.715 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-09 09:45:08.242 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 09:45:08.270 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=36
+2022-04-09 09:45:08.379 INFO  (qtp1818339587-22) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*&df=tweet&spellcheck.q=goldmansuchs&indent=true&spellcheck=true&q.op=OR&sort=created_at+asc&rows=50&_=1649497508213} hits=89931 status=0 QTime=144
+2022-04-09 09:45:19.121 INFO  (qtp1818339587-25) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*&df=tweet&spellcheck.q=goldmansuchs&indent=true&spellcheck=true&q.op=OR&sort=created_at+asc&rows=50&_=1649497508213} hits=89931 status=0 QTime=14
+2022-04-09 09:45:19.786 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*&df=tweet&spellcheck.q=goldmansuchs&indent=true&spellcheck=true&q.op=OR&sort=created_at+asc&rows=50&_=1649497508213} hits=89931 status=0 QTime=2
+2022-04-09 09:47:07.935 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,attributes = {startup=lazy, name=/spell, class=solr.SearchHandler},args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
+2022-04-09 09:47:07.953 ERROR (qtp1818339587-27) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _name => org.apache.solr.common.SolrException: undefined field _name
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field _name
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:832) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+2022-04-09 09:47:07.954 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/spell params={q=_name:homy&amp;spellcheck=true&amp;spellcheck.build=true&amp;version=2.2&amp;indent=true&amp;spellcheck.count=10&amp;rows=100000000&amp;wt=json} status=400 QTime=19
+2022-04-09 09:54:27.128 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*&df=username&spellcheck.q=goldmansuchs&indent=true&spellcheck=true&q.op=OR&sort=created_at+asc&rows=50&_=1649497508213} hits=89931 status=0 QTime=2
+2022-04-09 09:54:27.260 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 09:54:27.263 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*&df=username&spellcheck.q=goldmansuchs&indent=true&spellcheck=true&q.op=OR&sort=created_at+asc&rows=50&_=1649497508213} hits=89931 status=0 QTime=2
+2022-04-09 09:54:27.287 INFO  (qtp1818339587-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=26
+2022-04-09 09:56:04.123 INFO  (qtp1818339587-25) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=200&debugQuery=false} hits=255 status=0 QTime=70
+2022-04-09 10:02:07.194 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=200&debugQuery=false} hits=3 status=0 QTime=32
+2022-04-09 10:02:17.860 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman%2520sachs&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=200&debugQuery=false} hits=255 status=0 QTime=50
+2022-04-09 10:10:46.997 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649497508186&ts=1649497508186} status=503 QTime=36
+2022-04-09 10:10:46.997 INFO  (qtp1818339587-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=43
+2022-04-09 10:10:47.022 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649499046889} status=0 QTime=69
+2022-04-09 10:10:47.023 INFO  (qtp1818339587-45) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=54
+2022-04-09 10:10:47.025 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649499046888} status=0 QTime=56
+2022-04-09 10:10:47.050 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649499046888} status=0 QTime=98
+2022-04-09 10:12:01.928 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=200&debugQuery=false} hits=17442 status=0 QTime=35
+2022-04-09 10:13:37.562 INFO  (qtp1818339587-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=2
+2022-04-09 10:13:37.579 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=19
+2022-04-09 10:13:42.846 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=28
+2022-04-09 10:13:42.902 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 10:13:42.904 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=2
+2022-04-09 10:13:42.912 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=11
+2022-04-09 10:17:10.772 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=trading&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=200&debugQuery=false} hits=1777 status=0 QTime=26
+2022-04-09 10:50:52.379 INFO  (qtp1818339587-50) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=trade&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=10&debugQuery=false} hits=692 status=0 QTime=27
+2022-04-09 10:58:56.801 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=trading+stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=10&debugQuery=false} hits=5787 status=0 QTime=50
+2022-04-09 11:01:56.705 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=trading+stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=10&debugQuery=false} hits=5787 status=0 QTime=8
+2022-04-09 11:02:03.661 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=trade+stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=10&debugQuery=false} hits=4920 status=0 QTime=28
+2022-04-09 11:10:01.561 INFO  (qtp1818339587-50) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=10&debugQuery=false} hits=255 status=0 QTime=9
+2022-04-09 11:10:20.427 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=12
+2022-04-09 11:12:01.473 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=15
+2022-04-09 11:13:21.201 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=6
+2022-04-09 11:13:29.120 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=7
+2022-04-09 11:13:41.907 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=6
+2022-04-09 11:17:58.740 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=16
+2022-04-09 11:18:47.915 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=20
+2022-04-09 11:19:16.724 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=10
+2022-04-09 11:20:26.901 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=9
+2022-04-09 11:24:07.780 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=22
+2022-04-09 11:26:13.906 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=22
+2022-04-09 14:35:16.718 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=31
+2022-04-09 14:35:18.963 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=28
+2022-04-09 14:35:19.876 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=29
+2022-04-09 14:35:20.632 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=24
+2022-04-09 14:35:21.406 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=15
+2022-04-09 14:35:23.793 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=13
+2022-04-09 14:35:24.105 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=8
+2022-04-09 14:35:24.303 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=6
+2022-04-09 14:35:24.471 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=22
+2022-04-09 14:35:24.956 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=5
+2022-04-09 14:35:25.081 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=4
+2022-04-09 14:35:25.233 INFO  (qtp1818339587-45) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=14
+2022-04-09 14:35:25.324 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=6
+2022-04-09 14:35:25.466 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=9
+2022-04-09 14:35:25.534 INFO  (qtp1818339587-50) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=12
+2022-04-09 14:35:33.449 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=15
+2022-04-09 14:35:33.593 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=3
+2022-04-09 14:35:33.767 INFO  (qtp1818339587-50) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=18
+2022-04-09 14:35:33.867 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stocks&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4368 status=0 QTime=4
+2022-04-09 16:07:30.114 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=Goldmansachs&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=18
+2022-04-09 16:07:30.178 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 16:07:30.179 INFO  (qtp1818339587-46) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=Goldmansachs&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=9
+2022-04-09 16:07:30.216 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=46
+2022-04-09 16:07:31.135 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=Goldmansachs&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=3
+2022-04-09 16:07:42.041 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=6
+2022-04-09 16:07:42.079 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:07:42.082 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=2
+2022-04-09 16:07:42.107 INFO  (qtp1818339587-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=28
+2022-04-09 16:07:42.543 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:07:42.838 INFO  (qtp1818339587-53) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=6
+2022-04-09 16:07:42.996 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:07:49.788 INFO  (qtp1818339587-53) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:Goldmansachs&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:07:49.829 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:07:49.829 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:Goldmansachs&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:07:49.839 INFO  (qtp1818339587-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=10
+2022-04-09 16:07:50.860 INFO  (qtp1818339587-53) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:Goldmansachs&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:02.887 INFO  (qtp1818339587-52) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=2
+2022-04-09 16:08:02.922 INFO  (qtp1818339587-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=2
+2022-04-09 16:08:02.923 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Goldmansachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=3
+2022-04-09 16:08:02.941 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=20
+2022-04-09 16:08:07.794 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"GoldmanSachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=2
+2022-04-09 16:08:07.862 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:08:07.863 INFO  (qtp1818339587-52) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"GoldmanSachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:07.870 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 16:08:08.415 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"GoldmanSachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:08.568 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"GoldmanSachs"&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:20.669 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=GoldmanSachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:20.707 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:08:20.707 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=GoldmanSachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=0
+2022-04-09 16:08:20.717 INFO  (qtp1818339587-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=10
+2022-04-09 16:08:21.344 INFO  (qtp1818339587-52) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=GoldmanSachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:22.900 INFO  (qtp1818339587-53) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=GoldmanSachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=6
+2022-04-09 16:08:25.648 INFO  (qtp1818339587-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=7
+2022-04-09 16:08:25.653 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=17
+2022-04-09 16:08:25.654 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649497508186&ts=1649497508186} status=503 QTime=11
+2022-04-09 16:08:25.664 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649499046888} status=0 QTime=23
+2022-04-09 16:08:25.664 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649499046889} status=0 QTime=21
+2022-04-09 16:08:25.677 INFO  (qtp1818339587-55) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649499046888} status=0 QTime=40
+2022-04-09 16:08:27.883 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:08:27.890 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 16:08:41.581 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=1
+2022-04-09 16:08:41.653 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:08:41.654 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=1
+2022-04-09 16:08:41.658 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=5
+2022-04-09 16:08:48.255 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=255 status=0 QTime=1
+2022-04-09 16:08:48.307 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:08:48.311 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=255 status=0 QTime=5
+2022-04-09 16:08:48.313 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=6
+2022-04-09 16:08:52.945 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=8
+2022-04-09 16:08:52.980 INFO  (qtp1818339587-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 16:08:52.981 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=5
+2022-04-09 16:08:52.986 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=10
+2022-04-09 16:08:56.105 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:56.141 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:08:56.144 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 16:08:56.144 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=3
+2022-04-09 16:08:56.619 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=0
+2022-04-09 16:08:56.766 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:57.169 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:08:57.335 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:09:13.680 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:09:13.726 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=1
+2022-04-09 16:09:13.731 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=9
+2022-04-09 16:09:13.746 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=24
+2022-04-09 16:09:14.214 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=2
+2022-04-09 16:09:14.363 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:09:14.508 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 16:09:15.168 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=username&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=2
+2022-04-09 16:09:24.218 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=3 status=0 QTime=2
+2022-04-09 16:09:24.258 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:09:24.259 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldmansachs&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=3 status=0 QTime=1
+2022-04-09 16:09:24.269 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=10
+2022-04-09 16:09:36.498 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman+sachs&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=256 status=0 QTime=23
+2022-04-09 16:09:36.538 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:09:36.540 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman+sachs&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=256 status=0 QTime=2
+2022-04-09 16:09:36.552 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=14
+2022-04-09 16:09:58.845 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:"goldman+sachs"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=161 status=0 QTime=93
+2022-04-09 16:09:58.892 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:09:58.896 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:"goldman+sachs"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=161 status=0 QTime=3
+2022-04-09 16:09:58.901 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=9
+2022-04-09 16:10:16.000 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Bloomberg"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=4890 status=0 QTime=13
+2022-04-09 16:10:16.054 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:10:16.056 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Bloomberg"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=4890 status=0 QTime=2
+2022-04-09 16:10:16.058 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 16:10:26.028 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=7 status=0 QTime=9
+2022-04-09 16:10:26.088 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:10:26.089 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=7 status=0 QTime=1
+2022-04-09 16:10:26.092 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 16:10:47.664 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"+AND+tweet:"ask+shareholders"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=21
+2022-04-09 16:10:47.714 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=2
+2022-04-09 16:10:47.719 INFO  (qtp1818339587-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 16:10:47.720 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"+AND+tweet:"ask+shareholders"&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=9
+2022-04-09 16:11:58.271 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"+AND+tweet:"ask+shareholders"&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=1 status=0 QTime=18
+2022-04-09 16:17:03.711 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"+AND+tweet:"ask+shareholders"&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=6
+2022-04-09 16:17:03.772 INFO  (qtp1818339587-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 16:17:03.778 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"Tesla"+AND+tweet:"ask+shareholders"&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=2
+2022-04-09 16:17:03.792 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=20
+2022-04-09 16:20:16.054 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=8
+2022-04-09 16:20:16.092 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:20:16.098 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 16:20:21.471 INFO  (qtp1818339587-55) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=5
+2022-04-09 16:20:21.518 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=3
+2022-04-09 16:20:21.529 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=6
+2022-04-09 16:20:21.542 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=28
+2022-04-09 16:20:44.033 INFO  (qtp1818339587-55) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=2 status=0 QTime=17
+2022-04-09 16:20:44.084 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=12
+2022-04-09 16:20:44.086 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=2 status=0 QTime=13
+2022-04-09 16:20:44.090 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=17
+2022-04-09 16:21:12.271 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)+AND+tweet:"U."&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=27
+2022-04-09 16:21:12.306 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:21:12.310 INFO  (qtp1818339587-55) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)+AND+tweet:"U."&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=4
+2022-04-09 16:21:12.311 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=5
+2022-04-09 16:21:19.381 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)+AND+tweet:"U.S."&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=19
+2022-04-09 16:21:19.417 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:21:19.423 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)+AND+tweet:"U.S."&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=5
+2022-04-09 16:21:19.427 INFO  (qtp1818339587-57) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=10
+2022-04-09 16:21:41.248 INFO  (qtp1818339587-55) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)+AND+tweet:"U.S."&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=1 status=0 QTime=7
+2022-04-09 16:21:49.977 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=2 status=0 QTime=2
+2022-04-09 16:21:50.030 INFO  (qtp1818339587-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:21:50.031 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=2 status=0 QTime=1
+2022-04-09 16:21:50.039 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=9
+2022-04-09 16:21:54.026 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=id:(1508383394018779136+OR+1512264119944106003)&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=2 status=0 QTime=12
+2022-04-09 16:22:24.174 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={df=tweet&indent=true&q.op=OR&_=1649497508213} hits=0 status=0 QTime=8
+2022-04-09 16:22:24.216 INFO  (qtp1818339587-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:22:24.223 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=5
+2022-04-09 16:22:30.031 INFO  (qtp1818339587-55) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=2
+2022-04-09 16:22:30.102 INFO  (qtp1818339587-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:22:30.105 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=89931 status=0 QTime=0
+2022-04-09 16:22:30.111 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 16:25:15.223 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=89931 status=0 QTime=45
+2022-04-09 16:25:15.276 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=89931 status=0 QTime=0
+2022-04-09 16:25:15.277 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 16:25:15.281 INFO  (qtp1818339587-55) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 16:41:07.535 INFO  (qtp1818339587-63) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=asd&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=13
+2022-04-09 16:41:10.794 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=as&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=9132 status=0 QTime=37
+2022-04-09 16:46:53.810 INFO  (qtp1818339587-59) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=255 status=0 QTime=19
+2022-04-09 16:47:10.848 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&sort=created_at+desc&rows=5000&debugQuery=false} hits=255 status=0 QTime=48
+2022-04-09 16:47:50.616 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&sort=nlikes+desc&rows=5000&debugQuery=false} hits=255 status=0 QTime=17
+2022-04-09 16:48:26.285 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&sort=nretweets+desc&rows=5000&debugQuery=false} hits=255 status=0 QTime=35
+2022-04-09 16:48:56.843 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=goldman&df=tweet&indent=true&fl=*,+score&q.op=OR&sort=nreplies+desc&rows=5000&debugQuery=false} hits=255 status=0 QTime=9
+2022-04-09 17:12:29.482 INFO  (qtp1818339587-59) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:Goldmansachs&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=28
+2022-04-09 17:12:57.222 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"elonmusk"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=37 status=0 QTime=13
+2022-04-09 17:12:57.291 INFO  (qtp1818339587-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=6
+2022-04-09 17:12:57.300 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"elonmusk"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=37 status=0 QTime=15
+2022-04-09 17:12:57.315 INFO  (qtp1818339587-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=31
+2022-04-09 17:13:05.304 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"goldmansachs"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=0 status=0 QTime=7
+2022-04-09 17:13:05.349 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"goldmansachs"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=0 status=0 QTime=1
+2022-04-09 17:13:05.356 INFO  (qtp1818339587-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=1
+2022-04-09 17:13:05.366 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=17
+2022-04-09 17:13:13.651 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"elonmusk"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=37 status=0 QTime=4
+2022-04-09 17:13:13.710 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=1
+2022-04-09 17:13:13.717 INFO  (qtp1818339587-62) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"elonmusk"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=37 status=0 QTime=4
+2022-04-09 17:13:13.725 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=15
+2022-04-09 17:14:39.138 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"goldman"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=0 status=0 QTime=4
+2022-04-09 17:14:39.180 INFO  (qtp1818339587-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 17:14:39.180 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:"goldman"&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=0 status=0 QTime=0
+2022-04-09 17:14:39.196 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=16
+2022-04-09 17:14:49.367 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:gold~&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=18 status=0 QTime=145
+2022-04-09 17:14:49.440 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=7
+2022-04-09 17:14:49.460 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:gold~&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=18 status=0 QTime=27
+2022-04-09 17:14:49.471 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=38
+2022-04-09 17:15:02.934 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:tesla~&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=37 status=0 QTime=67
+2022-04-09 17:15:02.999 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=4
+2022-04-09 17:15:03.006 INFO  (qtp1818339587-49) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:tesla~&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=37 status=0 QTime=6
+2022-04-09 17:15:03.019 INFO  (qtp1818339587-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=19
+2022-04-09 17:15:12.513 ERROR (qtp1818339587-19) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-09 17:15:12.522 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:!tesla~&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} status=400 QTime=15
+2022-04-09 17:15:12.565 INFO  (qtp1818339587-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=2
+2022-04-09 17:15:12.569 ERROR (qtp1818339587-51) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla~': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-09 17:15:12.570 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:!tesla~&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} status=400 QTime=7
+2022-04-09 17:15:12.572 INFO  (qtp1818339587-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=10
+2022-04-09 17:15:16.454 ERROR (qtp1818339587-63) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-09 17:15:16.457 INFO  (qtp1818339587-63) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:!tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} status=400 QTime=4
+2022-04-09 17:15:16.495 ERROR (qtp1818339587-19) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'username:!tesla': Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <NOT> "! "" at line 1, column 9.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-09 17:15:16.495 INFO  (qtp1818339587-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=1
+2022-04-09 17:15:16.495 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:!tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} status=400 QTime=2
+2022-04-09 17:15:16.500 INFO  (qtp1818339587-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=7
+2022-04-09 17:15:24.213 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:+not+tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=17442 status=0 QTime=26
+2022-04-09 17:15:24.253 INFO  (qtp1818339587-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 17:15:24.260 INFO  (qtp1818339587-63) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:+not+tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=17442 status=0 QTime=7
+2022-04-09 17:15:24.262 INFO  (qtp1818339587-62) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=8
+2022-04-09 17:15:42.638 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:+tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=7 status=0 QTime=8
+2022-04-09 17:15:42.679 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 17:15:42.691 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:+tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=7 status=0 QTime=10
+2022-04-09 17:15:42.694 INFO  (qtp1818339587-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=15
+2022-04-09 17:15:50.740 INFO  (qtp1818339587-62) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:+tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=17442 status=0 QTime=7
+2022-04-09 17:15:50.785 INFO  (qtp1818339587-51) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 17:15:50.785 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:+tesla&df=tweet&indent=true&q.op=OR&sort=nlikes+desc&_=1649497508213} hits=17442 status=0 QTime=0
+2022-04-09 17:15:50.788 INFO  (qtp1818339587-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=2
+2022-04-09 17:15:58.669 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=17442 status=0 QTime=27
+2022-04-09 17:16:40.540 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:+tesla&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=17442 status=0 QTime=1
+2022-04-09 17:16:40.597 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649497508186} status=0 QTime=0
+2022-04-09 17:16:40.597 INFO  (qtp1818339587-62) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:+tesla&df=tweet&indent=true&q.op=OR&_=1649497508213} hits=17442 status=0 QTime=1
+2022-04-09 17:16:40.602 INFO  (qtp1818339587-63) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649497508186} status=0 QTime=6
+2022-04-09 17:49:55.208 INFO  (qtp1818339587-62) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=17442 status=0 QTime=31
+2022-04-09 17:50:02.133 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=username&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=7 status=0 QTime=8
+2022-04-09 17:51:23.851 INFO  (qtp1818339587-59) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=username&indent=true&fl=*,+score&q.op=OR&sort=nlikes+desc&rows=5000&debugQuery=false} hits=7 status=0 QTime=6
+2022-04-09 17:51:41.884 INFO  (qtp1818339587-64) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla~&df=username&indent=true&fl=*,+score&q.op=OR&sort=nlikes+desc&rows=5000&debugQuery=false} hits=37 status=0 QTime=81
+2022-04-09 17:51:58.614 INFO  (qtp1818339587-59) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=username&indent=true&fl=*,+score&q.op=OR&sort=nlikes+desc&rows=5000&debugQuery=false} hits=7 status=0 QTime=4
+2022-04-09 17:55:03.095 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2022-04-09 17:55:03.096 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2022-04-09 17:55:03.109 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2079278380
+2022-04-09 17:55:03.119 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [CSVCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@47607ac5
+2022-04-09 17:55:03.120 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.CSVCore tag=SolrCore@47607ac5
+2022-04-09 17:55:03.121 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@47cbcf8: rootName = null, domain = solr.core.CSVCore, service url = null, agent id = null] for registry solr.core.CSVCore/com.codahale.metrics.MetricRegistry@5d515c66
+2022-04-09 17:55:03.155 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2022-04-09 17:55:03.194 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-04-09 17:55:03.194 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5578be42: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@1dc9afb3
+2022-04-09 17:55:03.208 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-04-09 17:55:03.208 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@a50d709: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@131ed0e2
+2022-04-09 17:55:03.211 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-04-09 17:55:03.211 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5ed4bc: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@110ae4d0
+2022-04-09 17:55:03.233 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61bcd567{/solr,null,STOPPED}{/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
+>>>>>>> Stashed changes

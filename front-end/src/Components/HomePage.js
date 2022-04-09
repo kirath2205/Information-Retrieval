@@ -4,56 +4,82 @@ import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import SearchResult from './SearchComponents/SearchResult';
 import SearchIcon from "@mui/icons-material/Search";
+import TablePagination from "@mui/material/TablePagination";
+import FieldSelect from './FilterComponents/FieldSelect';
+import FilterSelect from './FilterComponents/FilterSelect';
+import GeoSelect from './FilterComponents/GeoSelect';
 
 import { DummyData } from "./TempData";
 
-// Require module
-// var SolrNode = require("solr-node");
-
-// Create client
-// var client = new SolrNode({
-// 	host: "127.0.0.1",
-// 	port: "8983",
-// 	core: "test",
-// 	protocol: "http",
-// });
- 
-// Set logger level (can be set to DEBUG, INFO, WARN, ERROR, FATAL or OFF)
-// require('log4js').getLogger('solr-node').level = 'DEBUG';
-
-
-// var solr = require('solr-client')
-// var solr = require('./../lib/solr');
-
-// var client = solr.createClient();
-
 export const HomePage = () => {
 
-    const tweet = {
-		id: "1494302463117176832",
-		username: ["GoldmanSachs"],
-		created_at: [1.645104444e12],
-		date: ["2022-02-17T21:27:24Z"],
-		tweet: ["David Solomon on Goldman Sachs’ path forward and opportunities for growth:  https://t.co/gogjCujuwM  https://t.co/JBtoqKIK0s"],
-		language: ["en"],
-		hashtags: ["[]"],
-		cashtags: ["[]"],
-		link: ["https://twitter.com/GoldmanSachs/status/1494302463117176832"],
-		urls: ["['https://click.gs.com/hdkw']"],
-		photos: ["['https://pbs.twimg.com/media/FLzUK63WQAYUpxm.jpg']"],
-		video: [1],
-		thumbnail: ["https://pbs.twimg.com/media/FLzUK63WQAYUpxm.jpg"],
-		nlikes: [13],
-		nreplies: [1],
-		nretweets: [7],
-		_version_: 1729379740141223936,
-		score: 1.4015064,
+    const [searchTerm, setsearchTerm] = useState("");
+	const [results, setResults] = useState({});
+	const [displyResults, setDisplyResults] = useState({});
+
+	const [field, setField] = useState("tweet");
+
+	const [page, setPage] = useState(0);
+	const [rowsPerPage, setRowsPerPage] = useState(10);
+
+	const [sort, setSort] = useState("");
+	const [order, setOrder] = useState("");
+
+	const [country, setCountry] = useState([]);
+
+	const handleFieldChange = (event) => {
+		setField(event.target.value);
+		console.log("Query field:", event.target.value);
 	};
 
-    // var SolrNode = require("solr-node");
+	const FilterSelectChange = (event) => {
+		setSort(event.target.value);
+		if (event.target.value === "") {
+			setOrder("");
+		}
+		console.log("Sort filer:", event.target.value);
+	};
 
-    const [searchTerm, setsearchTerm] = useState("");
-    const [results, setResults] = useState({});
+	const OrderChange = (event) => {
+		setOrder(event.target.value);
+		console.log("Order filer:", event.target.value);
+	};
+	
+	const handleChangePage = (event, newPage) => {
+		setPage(newPage);
+		setDisplyResults(
+			results.response.docs.slice(
+				newPage * rowsPerPage,
+				newPage * rowsPerPage + rowsPerPage
+			)
+		);
+		console.log("PageChange:", newPage)
+	};
+
+	const handleCountryChange = (event) => {
+		const {
+			target: { value },
+		} = event;
+		setCountry(
+			// On autofill we get a stringified value.
+			typeof value === "string" ? value.split(",") : value
+		);
+		console.log(
+			"Country:",
+			typeof value === "string" ? value.split(",") : value
+		);
+	};
+
+	const handleChangeRowsPerPage = (event) => {
+		setRowsPerPage(parseInt(event.target.value, 10));
+		setPage(0);
+		
+		setDisplyResults(
+			results.response.docs.slice(0, parseInt(event.target.value, 10))
+		);
+
+		console.log("RowsChange:", parseInt(event.target.value, 10));
+	};
 
     const queryBuilder = (q) => {
         const myUrlWithParams = new URL(
@@ -61,20 +87,26 @@ export const HomePage = () => {
 		);
 
 		myUrlWithParams.searchParams.append("q", q);
-        myUrlWithParams.searchParams.append("df", "tweet");
-        
+		myUrlWithParams.searchParams.append("df", field);
+		
+		// sorting
+		if (sort !== "")
+		{
+			myUrlWithParams.searchParams.append("sort", `${sort} ${order}`);
+		}
+
         // extra query params
         myUrlWithParams.searchParams.append("debugQuery", "false");
         myUrlWithParams.searchParams.append("fl", "*, score");
         myUrlWithParams.searchParams.append("indent", "true");
         myUrlWithParams.searchParams.append("q.op", "OR");
-        myUrlWithParams.searchParams.append("rows", "200");
+        myUrlWithParams.searchParams.append("rows", "5000");
 
         return myUrlWithParams.href;
     }
 
     const getResults = () => {
-        const query_term = searchTerm.replace(" ", "%20");
+        const query_term = searchTerm;
         // normal
         const fetchURL = `http://localhost:8983/solr/CSVCore/select?df=tweet&indent=true&q.op=OR&q=${searchTerm.replace(" ", "%20")}&rows=200`;
         // with score
@@ -92,14 +124,18 @@ export const HomePage = () => {
 			.then((response) => response.json())
             .then((data) => {
                 console.log(data);
-                setResults(data);
+				setResults(data);
+				setDisplyResults(data.response.docs.slice(0, 10));
             });
-        // console.log(DummyData.response.docs);
     }
 
     const handleSearchChange = (event) => {
 		setsearchTerm(event.target.value);
 	};
+
+	const TestClick = () => {
+		console.log("Sort:", sort, "Order:", order);
+	}
 
     return (
 		<div
@@ -110,10 +146,23 @@ export const HomePage = () => {
 		>
 			<div
 				style={{
+					display: "flex",
+					justifyContent: "flex-end",
 					flex: 1,
-					border: "1px solid #ced4d8",
+					// border: "1px solid #ced4d8",
 				}}
-			></div>
+			>
+				<p style={{ textAlign: "right" }}>
+					{results.response &&
+						`Total results: ${results.response.numFound}`}
+					<br></br>
+					{results.response &&
+						`Query time: ${
+							results.responseHeader.QTime / 1000
+						} sec`}
+				</p>
+				{/* <Button onClick={TestClick}></Button> */}
+			</div>
 			<div
 				style={{
 					display: "flex",
@@ -122,7 +171,7 @@ export const HomePage = () => {
 					flex: 2,
 					justifyContent: "center",
 					alignContent: "center",
-					border: "1px solid #ced4d8",
+					// border: "1px solid #ced4d8",
 				}}
 			>
 				<div
@@ -162,18 +211,55 @@ export const HomePage = () => {
 							flexDirection: "column",
 						}}
 					>
-						{results.response && results.response.docs.map((tweet) => (
-							<SearchResult tweet={tweet} key={tweet.id} />
-						))}
+						{results.response &&
+							displyResults.map((tweet) => (
+								<SearchResult tweet={tweet} key={tweet.id} />
+							))}
 					</div>
+					{results.response && (
+						<TablePagination
+							style={{ marginTop: "20px", padding: "0px" }}
+							component="div"
+							count={results.response.numFound}
+							page={page}
+							onPageChange={handleChangePage}
+							rowsPerPage={rowsPerPage}
+							onRowsPerPageChange={handleChangeRowsPerPage}
+						/>
+					)}
 				</div>
 			</div>
 			<div
 				style={{
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "flex-start",
 					flex: 1,
-					border: "1px solid #ced4d8",
+					// border: "1px solid #ced4d8",
 				}}
-			></div>
+			>
+				<h5 style={{ alignSelf: "flex-start" }}>Select query field</h5>
+				<FieldSelect
+					field={field}
+					handleFieldChange={handleFieldChange}
+				/>
+				<h5 style={{ alignSelf: "flex-start", marginTop: "10px" }}>
+					Sort filter
+				</h5>
+				<FilterSelect
+					sort={sort}
+					FilterSelectChange={FilterSelectChange}
+					order={order}
+					OrderChange={OrderChange}
+				/>
+				<h5 style={{ alignSelf: "flex-start", marginTop: "10px" }}>
+					Select geo-locations
+				</h5>
+				<GeoSelect
+					country={country}
+					handleCountryChange={handleCountryChange}
+				/>
+			</div>
 		</div>
 	);
 }

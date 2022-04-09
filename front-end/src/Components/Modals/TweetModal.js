@@ -33,7 +33,7 @@ const LikeBox = styled.div`
 `;
 
 function MyVerticallyCenteredModal(props) {
-	const tweet = props.tweetData;
+	const tweet = props.tweetdata;
 	const dt = new Date(tweet.date);
 	return (
 		<Modal
@@ -117,7 +117,6 @@ function MyVerticallyCenteredModal(props) {
 							{tweet.nreplies}
 						</LikeBox>
 					</div>
-					<TweetModal tweet={tweet} />
 				</Info>
 			</Modal.Body>
 			<Modal.Footer>
@@ -143,7 +142,7 @@ function TweetModal(props) {
 			<MyVerticallyCenteredModal
 				show={modalShow}
 				onHide={() => setModalShow(false)}
-				tweetData={props.tweet}
+				tweetdata={props.tweet}
 			/>
 		</>
 	);
