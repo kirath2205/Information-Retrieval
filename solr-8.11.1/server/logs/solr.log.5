@@ -1,61 +1,3 @@
-<<<<<<< Updated upstream
-2022-04-06 17:10:35.379 INFO  (main) [   ] o.e.j.u.log Logging initialized @1109ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-04-06 17:10:35.575 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
-2022-04-06 17:10:35.585 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
-2022-04-06 17:10:35.853 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2022-04-06 17:10:35.861 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2022-04-06 17:10:35.861 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2022-04-06 17:10:35.864 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2022-04-06 17:10:35.916 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-04-06 17:10:35.919 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
-2022-04-06 17:10:35.919 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-04-06 17:10:35.919 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kirath/Information-Retrieval/solr-8.11.1
-2022-04-06 17:10:35.919 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2022-04-06T17:10:35.919920Z
-2022-04-06 17:10:35.930 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
-2022-04-06 17:10:35.930 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/solr.xml
-2022-04-06 17:10:35.997 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
-2022-04-06 17:10:36.570 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2022-04-06 17:10:36.763 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4efc25fc[provider=null,keyStore=null,trustStore=null]
-2022-04-06 17:10:36.763 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4efc25fc[provider=null,keyStore=null,trustStore=null]
-2022-04-06 17:10:36.879 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1daf3b44[provider=null,keyStore=null,trustStore=null]
-2022-04-06 17:10:36.879 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1daf3b44[provider=null,keyStore=null,trustStore=null]
-2022-04-06 17:10:36.922 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-04-06 17:10:37.031 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-04-06 17:10:37.041 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2022-04-06 17:10:37.091 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 17:10:37.092 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 17:10:37.093 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 17:10:37.140 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
-2022-04-06 17:10:37.140 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [CSVCore]
-2022-04-06 17:10:37.168 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
-2022-04-06 17:10:37.208 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2022-04-06 17:10:37.211 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61bcd567{/solr,file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
-2022-04-06 17:10:37.224 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2022-04-06 17:10:37.224 INFO  (main) [   ] o.e.j.s.Server Started @2956ms
-2022-04-06 17:10:37.253 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Schema name=default-config
-2022-04-06 17:10:37.583 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2022-04-06 17:10:37.611 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.CoreContainer Creating SolrCore 'CSVCore' using configuration from instancedir /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore, trusted=true
-2022-04-06 17:10:37.640 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.CSVCore' (registry 'solr.core.CSVCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-06 17:10:37.653 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrCore [[CSVCore] ] Opening new SolrCore at [/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore], dataDir=[/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/]
-2022-04-06 17:10:38.054 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2022-04-06 17:10:38.054 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2022-04-06 17:10:38.061 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2022-04-06 17:10:38.061 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2022-04-06 17:10:38.168 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf
-2022-04-06 17:10:38.179 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2022-04-06 17:10:38.185 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2022-04-06 17:10:38.195 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2022-04-06 17:10:38.200 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1729379736695603200
-2022-04-06 17:10:38.203 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-06 17:10:38.203 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2022-04-06 17:10:38.208 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-06 17:10:41.403 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf/managed-schema
-2022-04-06 17:10:41.751 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={}{add=[1504500529065512969 (1729379740058386432), 1503613336461664258 (1729379740110815232), 1503315808860229636 (1729379740112912384), 1503266469043482627 (1729379740113960960), 1502220358539419648 (1729379740115009536), 1502051040283271170 (1729379740117106688), 1501971628946767879 (1729379740120252416), 1501929083126652932 (1729379740121300992), 1501286635211681794 (1729379740122349568), 1501226303206395905 (1729379740123398144), ... (742 adds)]} 0 508
-2022-04-06 17:10:42.040 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-06 17:10:42.045 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 4 ms
-2022-04-06 17:10:42.048 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commit=true}{commit=} 0 287
-2022-04-06 17:10:45.863 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649264233735} hits=742 status=0 QTime=34
-=======
 2022-04-06 22:45:24.303 INFO  (main) [   ] o.e.j.u.log Logging initialized @1178ms to org.eclipse.jetty.util.log.Slf4jLog
 2022-04-06 22:45:24.517 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
 2022-04-06 22:45:24.527 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
@@ -178,4 +120,3 @@ java.nio.file.NoSuchFileException: /Users/kirath/Information-Retrieval/solr-8.11
 2022-04-06 22:47:30.395 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
 2022-04-06 22:47:30.395 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b27e8f4: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7002e2cb
 2022-04-06 22:47:30.401 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61bcd567{/solr,null,STOPPED}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
->>>>>>> Stashed changes
