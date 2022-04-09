@@ -10,6 +10,9 @@ for folder,subfolder,file_list in os.walk(directory):
         if('.csv' in element):
             address=folder+'/'+element
             os.system('bin/post -c CSVCore '+address)
+            
+
+    
         
 
 
