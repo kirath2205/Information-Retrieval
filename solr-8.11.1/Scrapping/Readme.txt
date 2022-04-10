@@ -6,3 +6,5 @@
 6. Run the Combine all files notebook  to combine all the csv files to get all the tweets used in the project
 
 7. Run the Word count notebook to see the number of rows, word count and unique word count for our data
+
+Twint might scrap very little data in a loop. Manually scrap for each item when this happens
