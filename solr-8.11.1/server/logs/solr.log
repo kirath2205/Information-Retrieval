@@ -1,91 +1,513 @@
-2022-04-10 05:21:05.576 INFO  (main) [   ] o.e.j.u.log Logging initialized @974ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-04-10 05:21:05.731 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
-2022-04-10 05:21:05.740 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
-2022-04-10 05:21:05.941 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2022-04-10 05:21:05.949 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2022-04-10 05:21:05.949 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2022-04-10 05:21:05.951 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2022-04-10 05:21:05.995 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2022-04-10 05:21:05.999 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
-2022-04-10 05:21:05.999 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2022-04-10 05:21:05.999 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kirath/Information-Retrieval/solr-8.11.1
-2022-04-10 05:21:05.999 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2022-04-10T05:21:05.999493Z
-2022-04-10 05:21:06.012 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
-2022-04-10 05:21:06.012 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/solr.xml
-2022-04-10 05:21:06.065 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
-2022-04-10 05:21:06.376 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2022-04-10 05:21:06.474 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e48bf9a[provider=null,keyStore=null,trustStore=null]
-2022-04-10 05:21:06.474 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e48bf9a[provider=null,keyStore=null,trustStore=null]
-2022-04-10 05:21:06.559 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@18acfe88[provider=null,keyStore=null,trustStore=null]
-2022-04-10 05:21:06.559 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@18acfe88[provider=null,keyStore=null,trustStore=null]
-2022-04-10 05:21:06.589 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2022-04-10 05:21:06.732 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2022-04-10 05:21:06.741 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2022-04-10 05:21:06.799 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-10 05:21:06.800 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-10 05:21:06.800 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-10 05:21:06.828 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr
-2022-04-10 05:21:06.829 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [CSVCore]
-2022-04-10 05:21:06.851 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
-2022-04-10 05:21:06.875 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2022-04-10 05:21:06.879 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61bcd567{/solr,file:///Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
-2022-04-10 05:21:06.890 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2022-04-10 05:21:06.890 INFO  (main) [   ] o.e.j.s.Server Started @2289ms
-2022-04-10 05:21:06.917 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Schema name=default-config
-2022-04-10 05:21:07.112 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2022-04-10 05:21:07.112 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2022-04-10 05:21:07.112 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2022-04-10 05:21:07.112 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2022-04-10 05:21:07.112 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2022-04-10 05:21:07.218 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2022-04-10 05:21:07.243 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.CoreContainer Creating SolrCore 'CSVCore' using configuration from instancedir /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore, trusted=true
-2022-04-10 05:21:07.258 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.CSVCore' (registry 'solr.core.CSVCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
-2022-04-10 05:21:07.267 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrCore [[CSVCore] ] Opening new SolrCore at [/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore], dataDir=[/Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/]
-2022-04-10 05:21:07.740 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2022-04-10 05:21:07.740 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2022-04-10 05:21:07.751 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2022-04-10 05:21:07.751 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2022-04-10 05:21:07.781 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kirath/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf
-2022-04-10 05:21:07.789 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2022-04-10 05:21:07.794 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2022-04-10 05:21:07.803 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2022-04-10 05:21:07.810 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:21:07.810 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2022-04-10 05:21:07.815 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:21:11.143 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649568051914} hits=0 status=0 QTime=24
-2022-04-10 05:24:23.558 INFO  (qtp1818339587-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649568051852} status=0 QTime=2
-2022-04-10 05:24:23.565 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649568051853} status=0 QTime=8
-2022-04-10 05:24:23.570 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1649568263538} status=0 QTime=14
-2022-04-10 05:24:40.170 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:40.177 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 4 ms
-2022-04-10 05:24:41.068 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:41.073 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:42.214 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:42.217 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:43.079 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:43.082 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:44.086 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:44.088 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:45.048 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:45.050 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:46.064 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:46.066 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:47.078 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:47.081 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:48.054 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:48.057 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:49.034 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:49.035 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:49.465 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.u.p.LogUpdateProcessorFactory [CSVCore]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json}{add=[1.51E+18 (1729697707527766016), 1.51E+18 (1729697707580194816), 1.51E+18 (1729697707583340544), 1.51E+18 (1729697707584389120), 1.51E+18 (1729697707586486272), 1.51E+18 (1729697707588583424), 1.51E+18 (1729697707589632000), 1.51E+18 (1729697707592777728), 1.51E+18 (1729697707594874880), 1.51E+18 (1729697707595923456), ... (92473 adds)]} 0 12030
-2022-04-10 05:24:50.008 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2022-04-10 05:24:50.009 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
-2022-04-10 05:24:53.834 INFO  (qtp1818339587-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649568051852} status=0 QTime=0
-2022-04-10 05:24:53.836 INFO  (qtp1818339587-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649568051853} status=0 QTime=2
-2022-04-10 05:24:54.958 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649568051914} hits=717 status=0 QTime=9
-2022-04-10 05:24:55.034 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649568051852} status=0 QTime=0
-2022-04-10 05:24:55.037 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649568051853} status=0 QTime=3
-2022-04-10 05:24:55.039 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649568051914} hits=717 status=0 QTime=2
-2022-04-10 05:25:16.126 INFO  (qtp1818339587-20) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=717&_=1649568051914} hits=717 status=0 QTime=2
-2022-04-10 05:25:16.581 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649568051852} status=0 QTime=0
-2022-04-10 05:25:16.582 INFO  (qtp1818339587-23) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&rows=717&_=1649568051914} hits=717 status=0 QTime=1
-2022-04-10 05:25:16.584 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649568051853} status=0 QTime=3
+2022-04-10 06:25:01.109 INFO  (main) [   ] o.e.j.u.log Logging initialized @6478ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-04-10 06:25:01.366 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 16.0.1+9-24
+2022-04-10 06:25:01.376 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/contexts/] at interval 0
+2022-04-10 06:25:01.734 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2022-04-10 06:25:01.747 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2022-04-10 06:25:01.747 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2022-04-10 06:25:01.750 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2022-04-10 06:25:01.810 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2022-04-10 06:25:01.814 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
+2022-04-10 06:25:01.815 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2022-04-10 06:25:01.815 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1
+2022-04-10 06:25:01.815 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2022-04-10T06:25:01.815916Z
+2022-04-10 06:25:01.847 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr
+2022-04-10 06:25:01.848 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/solr.xml
+2022-04-10 06:25:01.954 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
+2022-04-10 06:25:02.546 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2022-04-10 06:25:02.746 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e48bf9a[provider=null,keyStore=null,trustStore=null]
+2022-04-10 06:25:02.748 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e48bf9a[provider=null,keyStore=null,trustStore=null]
+2022-04-10 06:25:02.935 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@18acfe88[provider=null,keyStore=null,trustStore=null]
+2022-04-10 06:25:02.937 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@18acfe88[provider=null,keyStore=null,trustStore=null]
+2022-04-10 06:25:02.985 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2022-04-10 06:25:03.168 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2022-04-10 06:25:03.180 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2022-04-10 06:25:03.278 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-10 06:25:03.279 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-10 06:25:03.289 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-10 06:25:03.325 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr
+2022-04-10 06:25:03.326 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [CSVCore]
+2022-04-10 06:25:03.418 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2022-04-10 06:25:03.459 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2022-04-10 06:25:03.461 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@61bcd567{/solr,file:///Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}
+2022-04-10 06:25:03.484 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2022-04-10 06:25:03.485 INFO  (main) [   ] o.e.j.s.Server Started @8855ms
+2022-04-10 06:25:03.525 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Schema name=default-config
+2022-04-10 06:25:04.192 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2022-04-10 06:25:04.193 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2022-04-10 06:25:04.193 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2022-04-10 06:25:04.193 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2022-04-10 06:25:04.193 WARN  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2022-04-10 06:25:04.378 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2022-04-10 06:25:04.448 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.CoreContainer Creating SolrCore 'CSVCore' using configuration from instancedir /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore, trusted=true
+2022-04-10 06:25:04.479 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.CSVCore' (registry 'solr.core.CSVCore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2022-04-10 06:25:04.499 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.c.SolrCore [[CSVCore] ] Opening new SolrCore at [/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore], dataDir=[/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/data/]
+2022-04-10 06:25:05.172 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2022-04-10 06:25:05.172 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2022-04-10 06:25:05.188 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2022-04-10 06:25:05.188 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2022-04-10 06:25:05.354 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr/CSVCore/conf
+2022-04-10 06:25:05.367 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2022-04-10 06:25:05.375 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2022-04-10 06:25:05.412 INFO  (coreLoadExecutor-13-thread-1) [   x:CSVCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2022-04-10 06:25:05.430 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2022-04-10 06:25:05.430 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2022-04-10 06:25:05.449 INFO  (searcherExecutor-15-thread-1-processing-x:CSVCore) [   x:CSVCore] o.a.s.c.SolrCore [CSVCore]  Registered new searcher autowarm time: 0 ms
+2022-04-10 06:25:07.508 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=42
+2022-04-10 06:25:07.550 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=85
+2022-04-10 06:25:07.601 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=Caught+on+CCTV+camera&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=92 status=0 QTime=137
+2022-04-10 06:25:22.167 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:"France"&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=0 status=0 QTime=7
+2022-04-10 06:25:22.237 INFO  (qtp1818339587-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=2
+2022-04-10 06:25:22.261 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:"France"&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=0 status=0 QTime=27
+2022-04-10 06:25:22.266 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=31
+2022-04-10 06:26:06.892 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=Blue+BMW+choice+of&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=153 status=0 QTime=13
+2022-04-10 06:26:06.971 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=9
+2022-04-10 06:26:06.981 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=Blue+BMW+choice+of&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=153 status=0 QTime=16
+2022-04-10 06:26:06.985 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=22
+2022-04-10 06:26:25.588 ERROR (qtp1818339587-27) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'" => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572) ~[?:?]
+	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_3R_3(QueryParser.java:642) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_3_1(QueryParser.java:631) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_2_1(QueryParser.java:600) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:141) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-10 06:26:25.589 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=@BMW_SA+"Tired+not+driving+BM'&df=tweet&indent=true&q.op=OR&_=1649571907432} status=400 QTime=2
+2022-04-10 06:26:25.656 ERROR (qtp1818339587-22) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'" => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212)
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse '@BMW_SA "Tired not driving BM'': Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 31.  Encountered: <EOF> after : "\"Tired not driving BM\'"
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572) ~[?:?]
+	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_3R_3(QueryParser.java:642) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_3_1(QueryParser.java:631) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_2_1(QueryParser.java:600) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:141) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-10 06:26:25.656 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=0
+2022-04-10 06:26:25.656 INFO  (qtp1818339587-22) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=@BMW_SA+"Tired+not+driving+BM'&df=tweet&indent=true&q.op=OR&_=1649571907432} status=400 QTime=1
+2022-04-10 06:26:25.678 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=23
+2022-04-10 06:26:45.422 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=The+BMW+car+given+to+the+employees+by+the+IT&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=439 status=0 QTime=23
+2022-04-10 06:26:45.485 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=2
+2022-04-10 06:26:45.493 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=The+BMW+car+given+to+the+employees+by+the+IT&df=tweet&indent=true&q.op=OR&_=1649571907432} hits=439 status=0 QTime=9
+2022-04-10 06:26:45.503 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=20
+2022-04-10 06:27:01.537 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=0
+2022-04-10 06:27:01.547 INFO  (qtp1818339587-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=11
+2022-04-10 06:27:01.550 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649571907356&ts=1649571907356} status=503 QTime=7
+2022-04-10 06:27:01.571 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649572021530} status=0 QTime=27
+2022-04-10 06:27:01.576 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649572021530} status=0 QTime=28
+2022-04-10 06:27:01.584 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649572021529} status=0 QTime=48
+2022-04-10 06:27:06.356 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=7
+2022-04-10 06:27:06.357 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1649572026341} status=0 QTime=5
+2022-04-10 06:27:06.373 INFO  (qtp1818339587-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=22
+2022-04-10 06:27:06.412 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1649572026341} status=0 QTime=1
+2022-04-10 06:27:06.413 INFO  (qtp1818339587-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=5
+2022-04-10 06:27:06.418 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=8
+2022-04-10 06:27:06.903 INFO  (qtp1818339587-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=0
+2022-04-10 06:27:06.914 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=11
+2022-04-10 06:27:06.922 INFO  (qtp1818339587-25) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1649572021529} status=0 QTime=20
+2022-04-10 06:27:07.469 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=5
+2022-04-10 06:27:07.473 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649572021529} status=0 QTime=12
+2022-04-10 06:27:07.477 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649571907356&ts=1649571907356} status=503 QTime=13
+2022-04-10 06:27:07.483 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=23
+2022-04-10 06:27:07.484 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649572021530} status=0 QTime=21
+2022-04-10 06:27:07.488 INFO  (qtp1818339587-25) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649572021530} status=0 QTime=24
+2022-04-10 06:27:12.720 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=2
+2022-04-10 06:27:12.732 INFO  (qtp1818339587-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=15
+2022-04-10 06:27:15.172 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649571907432} hits=717 status=0 QTime=9
+2022-04-10 06:27:15.246 INFO  (qtp1818339587-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=0
+2022-04-10 06:27:15.246 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649571907432} hits=717 status=0 QTime=1
+2022-04-10 06:27:15.271 INFO  (qtp1818339587-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=25
+2022-04-10 06:27:32.328 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=9
+2022-04-10 06:27:32.328 INFO  (qtp1818339587-22) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649571907356&ts=1649571907356} status=503 QTime=8
+2022-04-10 06:27:32.349 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649572021530} status=0 QTime=12
+2022-04-10 06:27:32.350 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649572021529} status=0 QTime=9
+2022-04-10 06:27:32.365 INFO  (qtp1818339587-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=24
+2022-04-10 06:27:32.369 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649572021530} status=0 QTime=49
+2022-04-10 06:27:42.020 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=3
+2022-04-10 06:27:42.027 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=9
+2022-04-10 06:27:43.764 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649572021530} status=0 QTime=11
+2022-04-10 06:27:43.764 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=12
+2022-04-10 06:27:43.765 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649571907356&ts=1649571907356} status=503 QTime=12
+2022-04-10 06:27:43.766 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649572021529} status=0 QTime=13
+2022-04-10 06:27:43.767 INFO  (qtp1818339587-27) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649572021530} status=0 QTime=15
+2022-04-10 06:27:43.767 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=15
+2022-04-10 06:27:51.415 INFO  (qtp1818339587-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=8
+2022-04-10 06:27:51.422 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=15
+2022-04-10 06:27:52.957 INFO  (qtp1818339587-22) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1649571907356&ts=1649571907356} status=503 QTime=5
+2022-04-10 06:27:52.958 INFO  (qtp1818339587-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=6
+2022-04-10 06:27:52.961 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1649572021529} status=0 QTime=9
+2022-04-10 06:27:52.975 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1649572021530} status=0 QTime=21
+2022-04-10 06:27:52.993 INFO  (qtp1818339587-25) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/system params={wt=json&_=1649572021530} status=0 QTime=40
+2022-04-10 06:27:52.993 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=41
+2022-04-10 06:29:32.522 INFO  (qtp1818339587-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=0
+2022-04-10 06:29:32.530 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=8
+2022-04-10 06:29:43.187 INFO  (qtp1818339587-25) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649571907432} hits=717 status=0 QTime=1
+2022-04-10 06:29:43.244 INFO  (qtp1818339587-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=1
+2022-04-10 06:29:43.252 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=11
+2022-04-10 06:29:43.252 INFO  (qtp1818339587-43) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649571907432} hits=717 status=0 QTime=11
+2022-04-10 06:39:03.370 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=9
+2022-04-10 06:39:03.399 INFO  (qtp1818339587-22) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/config params={wt=json&_=1649572743312} status=0 QTime=40
+2022-04-10 06:39:03.421 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1649572021529} status=0 QTime=62
+2022-04-10 06:39:03.430 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=72
+2022-04-10 06:39:03.467 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1649572021529} status=0 QTime=13
+2022-04-10 06:39:07.743 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/config params={wt=json&_=1649572743312} status=0 QTime=2
+2022-04-10 06:39:07.743 INFO  (qtp1818339587-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=0
+2022-04-10 06:39:07.766 INFO  (qtp1818339587-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=25
+2022-04-10 06:39:07.769 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1649572021529} status=0 QTime=29
+2022-04-10 06:39:07.788 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1649572021529} status=0 QTime=6
+2022-04-10 06:40:01.706 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=2
+2022-04-10 06:40:01.724 INFO  (qtp1818339587-26) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/config params={wt=json&_=1649572743312} status=0 QTime=20
+2022-04-10 06:40:01.732 INFO  (qtp1818339587-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=25
+2022-04-10 06:40:01.763 INFO  (qtp1818339587-28) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1649572021529} status=0 QTime=60
+2022-04-10 06:40:01.790 INFO  (qtp1818339587-19) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1649572021529} status=0 QTime=10
+2022-04-10 06:40:02.419 INFO  (qtp1818339587-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649571907356} status=0 QTime=2
+2022-04-10 06:40:02.436 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649571907432} hits=717 status=0 QTime=10
+2022-04-10 06:40:02.439 INFO  (qtp1818339587-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649571907356} status=0 QTime=13
+2022-04-10 06:56:25.389 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=market&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=35 status=0 QTime=40
+2022-04-10 06:56:38.056 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=5
+2022-04-10 06:57:52.230 INFO  (qtp1818339587-53) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=1
+2022-04-10 07:00:43.168 INFO  (qtp1818339587-50) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=2
+2022-04-10 07:09:04.284 INFO  (qtp1818339587-53) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=5
+2022-04-10 07:09:42.633 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=1
+2022-04-10 07:10:03.479 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=0
+2022-04-10 07:10:04.498 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=1
+2022-04-10 07:10:05.145 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=0
+2022-04-10 07:10:05.714 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=0
+2022-04-10 07:10:06.265 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=1
+2022-04-10 07:10:08.021 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=4
+2022-04-10 07:16:18.428 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR} hits=717 status=0 QTime=1
+2022-04-10 07:16:21.487 INFO  (qtp1818339587-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=2
+2022-04-10 07:16:21.491 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1649574981472} hits=717 status=0 QTime=1
+2022-04-10 07:16:21.527 INFO  (qtp1818339587-53) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=40
+2022-04-10 07:16:29.766 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:"India"&indent=true&q.op=OR&_=1649574981472} hits=2 status=0 QTime=11
+2022-04-10 07:16:29.826 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=0
+2022-04-10 07:16:29.837 INFO  (qtp1818339587-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=12
+2022-04-10 07:16:29.839 INFO  (qtp1818339587-50) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:"India"&indent=true&q.op=OR&_=1649574981472} hits=2 status=0 QTime=14
+2022-04-10 07:16:42.638 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:"UK"&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=3
+2022-04-10 07:16:42.686 INFO  (qtp1818339587-21) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:"UK"&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=1
+2022-04-10 07:16:42.685 INFO  (qtp1818339587-50) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=0
+2022-04-10 07:16:42.691 INFO  (qtp1818339587-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=5
+2022-04-10 07:22:20.844 INFO  (qtp1818339587-60) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=7
+2022-04-10 07:23:05.830 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=12
+2022-04-10 07:23:05.884 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=0
+2022-04-10 07:23:05.889 INFO  (qtp1818339587-56) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=2
+2022-04-10 07:23:05.899 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=14
+2022-04-10 07:23:22.182 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:UK+OR+India&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=23
+2022-04-10 07:23:22.224 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=0
+2022-04-10 07:23:22.226 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:UK+OR+India&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=2
+2022-04-10 07:23:22.237 INFO  (qtp1818339587-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=13
+2022-04-10 07:23:32.073 INFO  (qtp1818339587-56) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=4
+2022-04-10 07:23:32.121 INFO  (qtp1818339587-58) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=0
+2022-04-10 07:23:32.123 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=2
+2022-04-10 07:23:32.126 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=5
+2022-04-10 07:23:41.298 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=3 status=0 QTime=49
+2022-04-10 07:25:53.769 INFO  (qtp1818339587-24) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&df=tweet&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=1 status=0 QTime=9
+2022-04-10 07:27:36.083 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)+tweet:@WineGlassCharms&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=13
+2022-04-10 07:27:36.123 INFO  (qtp1818339587-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=1
+2022-04-10 07:27:36.133 INFO  (qtp1818339587-56) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)+tweet:@WineGlassCharms&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=9
+2022-04-10 07:27:36.136 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=13
+2022-04-10 07:27:44.492 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)+AND+tweet:@WineGlassCharms&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=69
+2022-04-10 07:27:44.539 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=0
+2022-04-10 07:27:44.545 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)+AND+tweet:@WineGlassCharms&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=6
+2022-04-10 07:27:44.550 INFO  (qtp1818339587-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=11
+2022-04-10 07:30:45.024 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tesla&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=7
+2022-04-10 07:31:01.980 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=1
+2022-04-10 07:31:02.064 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)&indent=true&q.op=OR&_=1649574981472} hits=3 status=0 QTime=7
+2022-04-10 07:31:02.064 INFO  (qtp1818339587-48) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=9
+2022-04-10 07:31:02.065 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=9
+2022-04-10 07:31:09.882 INFO  (qtp1818339587-59) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=@WineGlassCharms&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=3
+2022-04-10 07:31:11.292 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=@WineGlassCharms&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=2
+2022-04-10 07:31:13.546 INFO  (qtp1818339587-59) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=@WineGlassCharms&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=1
+2022-04-10 07:31:23.631 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=disappointed+to+hear&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=4
+2022-04-10 07:31:34.650 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stock&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=3
+2022-04-10 07:31:54.827 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stock&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=2
+2022-04-10 07:32:08.953 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=stockAND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=3 status=0 QTime=11
+2022-04-10 07:33:49.250 INFO  (qtp1818339587-51) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:stock+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=12
+2022-04-10 07:33:53.042 ERROR (qtp1818339587-57) [   x:CSVCore] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'tweet: AND geo:(UK OR India)': Encountered " <AND> "AND "" at line 1, column 7.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+     => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'tweet: AND geo:(UK OR India)': Encountered " <AND> "AND "" at line 1, column 7.
+Was expecting one of:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'tweet: AND geo:(UK OR India)': Encountered " <AND> "AND "" at line 1, column 7.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:212) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:319) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:273) ~[jetty-servlets-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'tweet: AND geo:(UK OR India)': Encountered " <AND> "AND "" at line 1, column 7.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:274) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <AND> "AND "" at line 1, column 7.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:325) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:162) ~[?:?]
+	... 50 more
+2022-04-10 07:33:53.043 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} status=400 QTime=4
+2022-04-10 07:34:01.307 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:disappointed+to+hear+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=4
+2022-04-10 07:34:09.521 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:disappointed+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=1 status=0 QTime=8
+2022-04-10 07:34:16.770 INFO  (qtp1818339587-54) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:disappointed+to+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=5
+2022-04-10 07:34:50.323 INFO  (qtp1818339587-56) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)+AND+tweet:(disappointed+to)&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=18
+2022-04-10 07:34:50.372 INFO  (qtp1818339587-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1649574981436} status=0 QTime=1
+2022-04-10 07:34:50.388 INFO  (qtp1818339587-48) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=geo:(UK+OR+India)+AND+tweet:(disappointed+to)&indent=true&q.op=OR&_=1649574981472} hits=1 status=0 QTime=14
+2022-04-10 07:34:50.398 INFO  (qtp1818339587-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1649574981437} status=0 QTime=25
+2022-04-10 07:35:01.612 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:(disappointed+to)+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=1 status=0 QTime=12
+2022-04-10 07:35:04.822 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:(disappointed+to+hear)+AND+geo:(UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=1 status=0 QTime=14
+2022-04-10 07:36:23.263 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:(tesla)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=8
+2022-04-10 07:36:27.044 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=username:(goldman)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=0 status=0 QTime=6
+2022-04-10 07:36:30.382 INFO  (qtp1818339587-57) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:(car)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=2 status=0 QTime=9
+2022-04-10 07:39:23.161 INFO  (qtp1818339587-61) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:(*)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=717 status=0 QTime=29
+2022-04-10 07:39:27.854 INFO  (qtp1818339587-44) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:(*)+AND+geo:(Singapore)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=1 status=0 QTime=18
+2022-04-10 07:39:35.617 INFO  (qtp1818339587-61) [   x:CSVCore] o.a.s.c.S.Request [CSVCore]  webapp=/solr path=/select params={q=tweet:(*)+AND+geo:(Singapore+OR+UK+OR+India)&indent=true&fl=*,+score&q.op=OR&rows=5000&debugQuery=false} hits=4 status=0 QTime=10
+2022-04-10 07:56:31.818 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@4c550889{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2022-04-10 07:56:31.818 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2022-04-10 07:56:31.834 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2079278380
+2022-04-10 07:56:31.842 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [CSVCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@17826777
+2022-04-10 07:56:31.842 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.CSVCore tag=SolrCore@17826777
+2022-04-10 07:56:31.842 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@178645bf: rootName = null, domain = solr.core.CSVCore, service url = null, agent id = null] for registry solr.core.CSVCore/com.codahale.metrics.MetricRegistry@fc69518
+2022-04-10 07:56:31.898 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2022-04-10 07:56:31.934 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2022-04-10 07:56:31.935 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5578be42: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@f51b8e1
+2022-04-10 07:56:31.943 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2022-04-10 07:56:31.943 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@a50d709: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@60c50b62
+2022-04-10 07:56:31.944 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2022-04-10 07:56:31.944 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5ed4bc: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@1dc9afb3
+2022-04-10 07:56:31.964 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@61bcd567{/solr,null,STOPPED}{/Users/shashwat.arya/Desktop/Information-Retrieval/solr-8.11.1/server/solr-webapp/webapp}

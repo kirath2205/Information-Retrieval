@@ -7,6 +7,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LoopIcon from "@mui/icons-material/Loop";
 import ReplyIcon from "@mui/icons-material/Reply";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ImageStyle = styled.img`
 	width: 60px;
@@ -124,6 +125,16 @@ function MyVerticallyCenteredModal(props) {
 							/>
 							{tweet.nreplies}
 						</LikeBox>
+						{tweet.geo ?
+							<LikeBox>
+								<LocationOnIcon
+									style={{
+										fontSize: "20",
+										color: "black",
+									}}
+								/>
+								{tweet.geo}
+							</LikeBox> : null}
 					</div>
 				</Info>
 			</Modal.Body>

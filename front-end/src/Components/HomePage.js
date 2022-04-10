@@ -8,10 +8,13 @@ import TablePagination from "@mui/material/TablePagination";
 import FieldSelect from './FilterComponents/FieldSelect';
 import FilterSelect from './FilterComponents/FilterSelect';
 import GeoSelect from './FilterComponents/GeoSelect';
+import SentimentProgress from './SentimentProgress';
 
 import { DummyData } from "./TempData";
 
 export const HomePage = () => {
+
+	const [sentiment, setSentiment] = useState(0);
 
     const [searchTerm, setsearchTerm] = useState("");
 	const [results, setResults] = useState({});
@@ -86,13 +89,18 @@ export const HomePage = () => {
 			"http://localhost:8983/solr/CSVCore/select?"
 		);
 
-		myUrlWithParams.searchParams.append("q", q);
-		myUrlWithParams.searchParams.append("df", field);
+		// myUrlWithParams.searchParams.append("df", field);
+		var query = `${field}:(${q})`;
 		
 		// sorting
 		if (sort !== "")
 		{
 			myUrlWithParams.searchParams.append("sort", `${sort} ${order}`);
+		}
+
+		if (country.length !== 0) {
+			const geos = country.join(" OR ");
+			query = query + " AND geo:(" + geos + ")";
 		}
 
         // extra query params
@@ -102,6 +110,7 @@ export const HomePage = () => {
         myUrlWithParams.searchParams.append("q.op", "OR");
         myUrlWithParams.searchParams.append("rows", "5000");
 
+		myUrlWithParams.searchParams.append("q", query);
         return myUrlWithParams.href;
     }
 
@@ -126,7 +135,7 @@ export const HomePage = () => {
                 console.log(data);
 				setResults(data);
 				setDisplyResults(data.response.docs.slice(0, 10));
-				console.log(data.response.docs.slice(0, 10)[0].hashtags);
+				// console.log(data.response.docs.slice(0, 10)[0].hashtags);
 			});
 		
 		// reset pagination
@@ -138,8 +147,8 @@ export const HomePage = () => {
 		setsearchTerm(event.target.value);
 	};
 
-	const TestClick = () => {
-		console.log("Sort:", sort, "Order:", order);
+	const sentimentClick = () => {
+		setSentiment(80);
 	}
 
     return (
@@ -165,6 +174,31 @@ export const HomePage = () => {
 						`Query time: ${
 							results.responseHeader.QTime / 1000
 						} sec`}
+					<br></br>
+					<br></br>
+					{results.response && (
+						<div>
+							<Button onClick={sentimentClick}>
+								Sentiment Score
+							</Button>
+							<br />
+							{sentiment !== 0 && (
+								<div style={{ marginTop: "10px" }}>
+									{sentiment !== 0 &&
+										`Positive: ${sentiment}%`}
+									<SentimentProgress progress={80} />
+									<br />
+									{sentiment !== 0 &&
+										`Negative: ${sentiment}%`}
+									<SentimentProgress progress={80} />
+									<br />
+									{sentiment !== 0 &&
+										`Neutral: ${sentiment}%`}
+									<SentimentProgress progress={80} />
+								</div>
+							)}
+						</div>
+					)}
 				</p>
 				{/* <Button onClick={TestClick}></Button> */}
 			</div>
