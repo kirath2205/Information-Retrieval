@@ -21,7 +21,7 @@ export default function FilterSelect(props) {
 					<MenuItem value="">
 						<em>None</em>
 					</MenuItem>
-					<MenuItem value={"created_at"}>Date</MenuItem>
+					<MenuItem value={"date"}>Date</MenuItem>
 					<MenuItem value={"nlikes"}>Likes</MenuItem>
 					<MenuItem value={"nretweets"}>Retweets</MenuItem>
 					<MenuItem value={"nreplies"}>Replies</MenuItem>

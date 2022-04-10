@@ -185,15 +185,15 @@ export const HomePage = () => {
 							{sentiment !== 0 && (
 								<div style={{ marginTop: "10px" }}>
 									{sentiment !== 0 &&
-										`Positive: ${sentiment}%`}
+										`Positive: ${52}%`}
 									<SentimentProgress progress={80} />
 									<br />
 									{sentiment !== 0 &&
-										`Negative: ${sentiment}%`}
+										`Negative: ${6}%`}
 									<SentimentProgress progress={80} />
 									<br />
 									{sentiment !== 0 &&
-										`Neutral: ${sentiment}%`}
+										`Neutral: ${42}%`}
 									<SentimentProgress progress={80} />
 								</div>
 							)}
