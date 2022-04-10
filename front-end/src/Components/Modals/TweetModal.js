@@ -65,9 +65,17 @@ function MyVerticallyCenteredModal(props) {
 					</div>
 				</Modal.Title>
 			</Modal.Header>
-			<Modal.Body style={{display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
-				<p>{tweet.tweet[0]}</p>
-				<Info>
+			<Modal.Body
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "flex-start",
+				}}
+			>
+				<p style={{ marginBottom: "5px" }}>{tweet.tweet[0]}</p>
+
+				{/* {tweet.hashtags && tweet.hashtags.length > 0 && tweet.hashtags.map(h => h)} */}
+				<Info style={{ marginTop: "15px" }}>
 					<LikeBox>
 						<DateRangeIcon
 							style={{

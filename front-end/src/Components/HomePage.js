@@ -126,7 +126,12 @@ export const HomePage = () => {
                 console.log(data);
 				setResults(data);
 				setDisplyResults(data.response.docs.slice(0, 10));
-            });
+				console.log(data.response.docs.slice(0, 10)[0].hashtags);
+			});
+		
+		// reset pagination
+		setPage(0);
+		setRowsPerPage(10);
     }
 
     const handleSearchChange = (event) => {
