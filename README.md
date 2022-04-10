@@ -3,8 +3,20 @@
 ## System Prerequisite:
 * solr-8.11.1
 * React.js
+* Flask
 
 ## Getting Started 
+
+### Setting up the flask server
+####  &nbsp;&nbsp;&nbsp;&nbsp;Create a virtual environment
+&nbsp;&nbsp;&nbsp;&nbsp;`python -m venv virtualenv`
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;Install the dependencies
+&nbsp;&nbsp;&nbsp;&nbsp;`pip install -r requirements.txt`
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;Fire up the server
+&nbsp;&nbsp;&nbsp;&nbsp;Navigate to the `Sentiment_Analysis_REST_API` folder and run `python main.py`.
+
 ### Step 1: Installing Dependencies for Frontend
 Navigate to the `front-end` folder and run `npm install` in your terminal to install package dependencies.
 
