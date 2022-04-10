@@ -64,14 +64,16 @@ def classify_sentiment():
 
     final_sentiment_score_probs = lstm_weight*final_lstm_probs + vader_weight*final_vader_probs
 
-    sentiment_idx = np.argmax(final_sentiment_score_probs)
+    # sentiment_idx = np.argmax(final_sentiment_score_probs)
 
-    if sentiment_idx==0:
-        return str(1)
-    elif sentiment_idx==1:
-        return str(0)
-    else:
-        return str(-1)
+    # if sentiment_idx==0:
+    #     return str(1)
+    # elif sentiment_idx==1:
+    #     return str(0)
+    # else:
+    #     return str(-1)
+    total_sum = np.sum(final_sentiment_score_probs)
+    return {"pos": (final_sentiment_score_probs[0]/total_sum)*100, "neu": (final_sentiment_score_probs[1]/total_sum)*100, "neg": (final_sentiment_score_probs[2]/total_sum)*100}
 
     
 
